@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-5xl md:text-7xl font-bold mb-6 tracking-tight"
           >
-            Website privacy compliance, <span className="text-lime">without the legal chaos</span>
+            Website privacy compliance, <span className="bg-black text-lime px-3 py-1 rounded-lg inline-block">without the legal chaos</span>
           </motion.h1>
           
           <motion.p 

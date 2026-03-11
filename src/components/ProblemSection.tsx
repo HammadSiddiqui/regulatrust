@@ -7,7 +7,7 @@ const ProblemSection: React.FC = () => {
     <section className="section-padding bg-off-white">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Most websites are <span className="text-lime">quietly non-compliant</span></h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Most websites are <span className="bg-black text-lime px-3 py-1 rounded-lg inline-block transform -rotate-1">quietly non-compliant</span></h2>
           <p className="text-lg text-charcoal/60">Using generic templates or ignoring data privacy isn't just risky—it's a liability that damages your brand trust.</p>
         </div>
 

@@ -17,7 +17,7 @@ const Features: React.FC = () => {
     <section id="features" className="section-padding bg-off-white">
       <div className="container">
         <div className="max-w-3xl mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Everything you need for <span className="text-lime">website privacy ops</span></h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Everything you need for <span className="bg-black text-lime px-3 py-1 rounded-lg inline-block">website privacy ops</span></h2>
           <p className="text-lg text-charcoal/60">A cohesive platform that handles the heavy lifting of compliance so your team can focus on growth.</p>
         </div>
 

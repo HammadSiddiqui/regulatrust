@@ -15,7 +15,7 @@ const HowItWorks: React.FC = () => {
     <section className="section-padding bg-white relative overflow-hidden">
       <div className="container relative z-10">
         <div className="max-w-3xl mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">From website scan to privacy compliance <span className="text-lime">in a few steps</span></h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">From website scan to privacy compliance <span className="bg-black text-lime px-3 py-1 rounded-lg inline-block">in a few steps</span></h2>
           <p className="text-lg text-charcoal/60">We've automated the complex legal requirements into a simple, developer-friendly workflow.</p>
         </div>
 

@@ -37,7 +37,7 @@ const Pricing: React.FC = () => {
     <section id="pricing" className="section-padding bg-off-white">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Transparent, <span className="text-lime">startup-friendly pricing</span></h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Transparent, <span className="bg-black text-lime px-3 py-1 rounded-lg inline-block">startup-friendly pricing</span></h2>
           <p className="text-lg text-charcoal/60">Choose the plan that fits your current stage. Scale as you grow.</p>
         </div>
 
