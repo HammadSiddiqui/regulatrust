@@ -56,8 +56,6 @@ const HowItWorks: React.FC = () => {
         <div className="absolute top-1/2 left-0 w-full h-[2px] bg-lime/20 -z-10 hidden lg:block rotate-1"></div>
       </div>
       
-      {/* Background Accent */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-off-white -z-0"></div>
     </section>
   );
 };

@@ -28,7 +28,7 @@ const Audience: React.FC = () => {
     <section id="agencies" className="section-padding bg-black text-white relative overflow-hidden">
       <div className="container relative z-10">
         <div className="max-w-3xl mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Built for teams that need <span className="text-lime">compliance done properly</span></h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-white">Built for teams that need <span className="text-lime">compliance done properly</span></h2>
           <p className="text-lg text-white/50">RegulaTrust scales with your organization, whether you are managing one site or one thousand.</p>
         </div>
 

@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-block px-4 py-1.5 mb-6 text-xs font-bold uppercase tracking-widest bg-lime/10 text-lime rounded-full border border-lime/20"
+            className="inline-block px-4 py-1.5 mb-6 text-xs font-bold uppercase tracking-widest bg-black text-lime rounded-full border border-lime/20"
           >
             Compliance-as-Code for Startups
           </motion.div>
