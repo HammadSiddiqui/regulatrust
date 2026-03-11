@@ -45,7 +45,7 @@ const Audience: React.FC = () => {
               <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-8 group-hover:bg-lime transition-colors">
                 {card.icon}
               </div>
-              <h3 className="text-2xl font-bold mb-4">{card.title}</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white">{card.title}</h3>
               <p className="text-sm text-white/40 mb-8 leading-relaxed">{card.desc}</p>
               
               <ul className="space-y-3">

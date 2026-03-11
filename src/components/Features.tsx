@@ -38,7 +38,7 @@ const Features: React.FC = () => {
                   {feature.icon}
                 </div>
                 <div>
-                  <h3 className="font-bold text-sm tracking-tight">{feature.title}</h3>
+                  <h3 className={`font-bold text-sm tracking-tight ${activeTab === feature.id ? 'text-white' : 'text-black'}`}>{feature.title}</h3>
                   {activeTab === feature.id && (
                     <motion.p 
                       layoutId="desc"

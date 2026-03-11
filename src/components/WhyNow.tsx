@@ -17,7 +17,7 @@ const WhyNow: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-6xl font-black mb-8 leading-none tracking-tighter">
+            <h2 className="text-4xl md:text-6xl font-black mb-8 leading-none tracking-tighter text-white">
               Privacy compliance is <span className="text-lime">no longer optional.</span>
             </h2>
             <p className="text-xl text-white/50 mb-12 max-w-lg">
@@ -39,7 +39,7 @@ const WhyNow: React.FC = () => {
                 transition={{ delay: index * 0.1 }}
                 className="group cursor-default"
               >
-                <h3 className="text-2xl font-bold mb-3 group-hover:text-lime transition-colors">{reason.title}</h3>
+                <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-lime transition-colors">{reason.title}</h3>
                 <p className="text-sm text-white/40 leading-relaxed max-w-md">{reason.desc}</p>
               </motion.div>
             ))}
