@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
           </nav>
         </div>
         <div className="flex items-center gap-4">
-          <button className="btn btn-outline hidden sm:flex">Book Demo</button>
+          <button className="btn btn-outline hidden sm:flex">Get Started</button>
           <button className="btn btn-primary">Get Free Scan</button>
         </div>
       </div>

@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
             className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
           >
             <button className="btn btn-primary px-8 py-4 text-base">Get a Free Privacy Scan</button>
-            <button className="btn btn-outline px-8 py-4 text-base">Book a Demo</button>
+            <button className="btn btn-outline px-8 py-4 text-base">Get Started</button>
           </motion.div>
         </div>
 

@@ -32,7 +32,7 @@ const FinalCTA: React.FC = () => {
                 Get a Free Privacy Scan
               </button>
               <button className="btn btn-outline text-white border-white/20 hover:bg-white hover:text-black px-10 py-5 text-base">
-                Book a Demo
+                Get Started
               </button>
             </div>
           </div>
