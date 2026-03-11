@@ -24,7 +24,7 @@ const FinalCTA: React.FC = () => {
               Get privacy compliant in <span className="text-lime">days — not months.</span>
             </h2>
             <p className="text-lg md:text-xl text-white/40 mb-12 max-w-xl mx-auto">
-              Launch banners, policies, consent logs, and DSAR workflows from one clean platform. Join 500+ startups building with trust.
+              Launch banners, policies, consent logs, and DSAR workflows from one clean platform. Built for the next generation of trust.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">

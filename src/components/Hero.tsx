@@ -13,7 +13,7 @@ const workflowSteps = [
 
 const Hero: React.FC = () => {
   return (
-    <section className="section-padding overflow-hidden">
+    <section id="product" className="section-padding overflow-hidden">
       <div className="container">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-16">
           <motion.div 
@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-charcoal/70 mb-10 max-w-2xl"
           >
-            RegulaTrust helps startups and agencies scan websites, deploy compliant cookie banners, generate privacy policies, log consent, and manage DSARs — all from one platform.
+            RegulaTrust helps startups and agencies scan websites, deploy compliant cookie banners, Launch banners, policies, consent logs, and DSAR workflows from one clean platform. Built for the next generation of trust.
           </motion.p>
           
           <motion.div 
