@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
         
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-[10px] text-white/20 uppercase font-bold tracking-[0.1em]">
-            © 2026 RegulaTrust Industries. All rights reserved. Built with lightning speed.
+            © 2026 RegulaTrust. All rights reserved.
           </p>
           <div className="flex gap-8 text-[10px] text-white/20 uppercase font-bold tracking-[0.1em]">
             <a href="#" className="hover:text-lime">Privacy Policy</a>
