@@ -50,8 +50,8 @@ const Pricing: React.FC = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               className={`p-10 rounded-2xl border transition-all flex flex-col items-start
-                ${plan.featured ? 'bg-white border-lime shadow-2xl scale-105 z-10' : 'bg-white border-grey shadow-sm'}
-                ${plan.dark ? 'bg-charcoal border-white/10 text-white' : 'text-charcoal'}
+                ${plan.dark ? 'bg-charcoal border-white/10 text-white' : 'bg-white border-grey text-charcoal shadow-sm'}
+                ${plan.featured ? 'border-lime shadow-2xl scale-105 z-10' : ''}
               `}
             >
               {plan.featured && (
