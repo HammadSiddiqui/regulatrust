@@ -5,9 +5,9 @@ const Navbar: React.FC = () => {
   return (
     <header className="sticky top-0 z-50 w-full bg-off-white/80 backdrop-blur-md border-b border-grey">
       <div className="container flex h-20 items-center justify-between">
-        <div className="flex items-center gap-12">
+        <div className="flex items-center gap-8">
           <Logo variant="black" className="h-8" />
-          <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
+          <nav className="hidden lg:flex items-center gap-6 text-sm font-medium">
             <a href="#product" className="hover:text-lime transition-colors">Product</a>
             <a href="#features" className="hover:text-lime transition-colors">Features</a>
             <a href="#pricing" className="hover:text-lime transition-colors">Pricing</a>

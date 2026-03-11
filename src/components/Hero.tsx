@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ delay: index * 0.1 }}
-                  className="flex flex-col items-center gap-4 p-6 bg-white border border-grey rounded-lg shadow-sm w-full sm:w-40 md:w-full hover:border-lime transition-colors group"
+                  className="flex flex-col items-center gap-4 p-6 bg-white border border-grey rounded-lg shadow-sm w-full sm:w-40 md:flex-1 hover:border-lime transition-colors group"
                 >
                   <div className="p-3 rounded-full bg-off-white group-hover:bg-lime transition-colors">
                     {React.cloneElement(step.icon as React.ReactElement<any>, { className: "text-black" })}
