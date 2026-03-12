@@ -1,14 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { XCircle, CheckCircle, AlertCircle, Ban, RefreshCw, FileWarning } from 'lucide-react';
+import { XCircle, CheckCircle, AlertCircle, Clock, Mail, MessageSquare } from 'lucide-react';
 
 const ProblemSection: React.FC = () => {
   return (
     <section className="section-padding bg-off-white">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Most websites are <span className="bg-black text-lime px-3 py-1 rounded-lg inline-block transform -rotate-1">quietly non-compliant</span></h2>
-          <p className="text-lg text-charcoal/60">Using generic templates or ignoring data privacy isn't just risky—it's a liability that damages your brand trust.</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Enterprise buyers ask questions your team <span className="bg-black text-lime px-3 py-1 rounded-lg inline-block transform -rotate-1">still answers manually</span></h2>
+          <p className="text-lg text-charcoal/60">Privacy and security questionnaires shouldn't be a bottleneck for your sales cycle. Stop the spreadsheet chaos.</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -17,20 +17,20 @@ const ProblemSection: React.FC = () => {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-white p-8 rounded-2xl border border-grey shadow-sm relative overflow-hidden group"
+            className="bg-white p-8 rounded-2xl border border-grey shadow-sm relative overflow-hidden group text-left"
           >
             <div className="absolute top-0 left-0 w-full h-1 bg-red-400/30"></div>
             <h3 className="text-xl font-bold mb-8 flex items-center gap-2">
               <span className="text-red-500"><XCircle size={20} /></span>
-              The "Standard" Setup
+              The "Status Quo" Friction
             </h3>
             
             <div className="space-y-6">
               {[
-                { icon: <Ban size={18} />, text: "Cookie banners set up incorrectly" },
-                { icon: <AlertCircle size={18} />, text: "Trackers firing before consent is given" },
-                { icon: <FileWarning size={18} />, text: "Outdated or generic privacy policies" },
-                { icon: <RefreshCw size={18} />, text: "No process for DSARs or consent records" },
+                { icon: <Mail size={18} />, text: "Trust evidence scattered across inboxes and Slack" },
+                { icon: <MessageSquare size={18} />, text: "Sales, ops, and legal repeat the same manual answers" },
+                { icon: <AlertCircle size={18} />, text: "Buyers ask for DPA details and subprocessors on every deal" },
+                { icon: <Clock size={18} />, text: "Manual reviews delay procurement by weeks" },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3 text-sm text-charcoal/50">
                   <span className="mt-0.5 text-red-400">{item.icon}</span>
@@ -40,7 +40,7 @@ const ProblemSection: React.FC = () => {
             </div>
             
             <div className="mt-10 pt-6 border-t border-grey/50">
-              <div className="text-[10px] uppercase font-bold text-red-400 tracking-widest mb-2">Current Risk Level</div>
+              <div className="text-[10px] uppercase font-bold text-red-400 tracking-widest mb-2">Deal Velocity Risk</div>
               <div className="w-full h-2 bg-red-100 rounded-full overflow-hidden">
                 <div className="w-4/5 h-full bg-red-400"></div>
               </div>
@@ -57,20 +57,20 @@ const ProblemSection: React.FC = () => {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-charcoal p-8 rounded-2xl border border-white/10 shadow-2xl relative overflow-hidden group"
+            className="bg-charcoal p-8 rounded-2xl border border-white/10 shadow-2xl relative overflow-hidden group text-left"
           >
             <div className="absolute top-0 left-0 w-full h-1 bg-lime"></div>
             <h3 className="text-xl font-bold mb-8 text-white flex items-center gap-2">
               <span className="text-lime"><CheckCircle size={20} /></span>
-              RegulaTrust Operations
+              The RegulaTrust Workflow
             </h3>
             
             <div className="space-y-6">
               {[
-                { text: "Automated scanner detects all active trackers", sub: "Matches 10,000+ tracker signatures" },
-                { text: "Dynamic banners with granular consent", sub: "Fully transparent visitor control" },
-                { text: "AI-generated policies that stay updated", sub: "Legal-vetted templates & auto-updates" },
-                { text: "End-to-end DSAR workflow automation", sub: "Handle requests in minutes, not hours" },
+                { text: "Centralized Trust Evidence Hub", sub: "Policies, DPAs, and SOC2 in one vault" },
+                { text: "Reuse Approved Answers", sub: "Collaborate once, answer everywhere" },
+                { text: "Buyer-Ready Trust Packs", sub: "Everything buyers expect, ready to share" },
+                { text: "AI-Powered Governance Summaries", sub: "Instant clarity on data use and models" },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <span className="mt-1 text-lime"><CheckCircle size={14} /></span>
@@ -83,7 +83,7 @@ const ProblemSection: React.FC = () => {
             </div>
 
             <div className="mt-10 pt-6 border-t border-white/10">
-              <div className="text-[10px] uppercase font-bold text-lime tracking-widest mb-2">Compliance Rating</div>
+              <div className="text-[10px] uppercase font-bold text-lime tracking-widest mb-2">Enterprise Credibility</div>
               <div className="w-full h-2 bg-white/5 rounded-full overflow-hidden">
                 <motion.div 
                   initial={{ width: 0 }}

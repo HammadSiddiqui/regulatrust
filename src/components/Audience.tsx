@@ -1,25 +1,25 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Rocket, Server, Users } from 'lucide-react';
+import { Building2, Cpu, ShieldCheck } from 'lucide-react';
 
 const audienceCards = [
   {
-    icon: <Rocket className="text-black" />,
-    title: "Startups",
-    desc: "Move fast without legal bottlenecks. Get a compliant banner and policy in minutes so you can focus on building.",
-    benefits: ["Quick setup", "Automated scans", "Scalable data logs"]
+    icon: <Building2 className="text-black" />,
+    title: "B2B SaaS Teams",
+    desc: "Speed up enterprise procurement by centralizing trust evidence and responding to questionnaires in hours, not weeks.",
+    benefits: ["Centralized Evidence", "Reuse Approved Answers", "Audit-Ready Logs"]
   },
   {
-    icon: <Server className="text-black" />,
-    title: "SaaS Teams",
-    desc: "Stay compliant as your product and website evolve. Our automated monitoring detects new trackers as you deploy.",
-    benefits: ["Deployment alerts", "CI/CD integration", "DSAR automation"]
+    icon: <Cpu className="text-black" />,
+    title: "AI Startups",
+    desc: "Built-in AI governance disclosures help you answer the tough questions about data use and human oversight from the start.",
+    benefits: ["AI Model Disclosure", "Data Use Transparency", "Governance Ready"]
   },
   {
-    icon: <Users className="text-black" />,
-    title: "Agencies",
-    desc: "Manage privacy compliance across multiple client sites from a single white-label dashboard with ease.",
-    benefits: ["Multi-site view", "Client permissions", "Bulk management"]
+    icon: <ShieldCheck className="text-black" />,
+    title: "Trust-Sensitive Products",
+    desc: "For Fintech, Healthtech, and HRtech teams selling into regulated buyers who demand deep privacy proof.",
+    benefits: ["DPA Documentation", "Subprocessor Register", "GDPR/HIPAA Controls"]
   }
 ];
 
@@ -27,9 +27,9 @@ const Audience: React.FC = () => {
   return (
     <section id="agencies" className="section-padding bg-black text-white relative overflow-hidden">
       <div className="container relative z-10">
-        <div className="max-w-3xl mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-white">Built for teams that need <span className="text-lime">compliance done properly</span></h2>
-          <p className="text-lg text-white/50">RegulaTrust scales with your organization, whether you are managing one site or one thousand.</p>
+        <div className="max-w-3xl mb-20 text-left">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-white">Built for teams under <span className="text-lime">real buyer scrutiny</span></h2>
+          <p className="text-lg text-white/50">RegulaTrust scales with your organization as you move from early deals to major enterprise contracts.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -40,7 +40,7 @@ const Audience: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-charcoal border border-white/10 p-10 rounded-2xl group hover:border-lime transition-all"
+              className="bg-charcoal border border-white/10 p-10 rounded-2xl group hover:border-lime transition-all text-left"
             >
               <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-8 group-hover:bg-lime transition-colors">
                 {card.icon}
@@ -50,7 +50,7 @@ const Audience: React.FC = () => {
               
               <ul className="space-y-3">
                 {card.benefits.map((benefit, i) => (
-                  <li key={i} className="flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-lime/80">
+                  <li key={i} className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-widest text-lime/80">
                     <div className="w-1.5 h-1.5 bg-lime rounded-full"></div>
                     {benefit}
                   </li>
@@ -58,6 +58,12 @@ const Audience: React.FC = () => {
               </ul>
             </motion.div>
           ))}
+        </div>
+        
+        <div className="mt-16 pt-8 border-t border-white/10 text-left">
+            <p className="text-xs text-white/30 font-bold uppercase tracking-widest">
+                Note: RegulaTrust is built for B2B privacy operations. Not for personal blogs or basic brochure websites.
+            </p>
         </div>
       </div>
       

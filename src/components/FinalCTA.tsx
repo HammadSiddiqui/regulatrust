@@ -1,43 +1,45 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { ArrowRight, ShieldCheck, Zap } from 'lucide-react';
 
 const FinalCTA: React.FC = () => {
   return (
-    <section className="py-24 bg-off-white">
-      <div className="container px-4">
+    <section className="section-padding bg-black text-white relative overflow-hidden">
+      <div className="container relative z-10 flex flex-col items-center text-center">
         <motion.div 
-          initial={{ opacity: 0, scale: 0.95 }}
+          initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="bg-charcoal rounded-[2rem] p-12 md:p-24 text-center relative overflow-hidden shadow-2xl border border-white/5"
+          className="w-20 h-20 bg-lime rounded-3xl flex items-center justify-center mb-10 rotate-6 shadow-[0_0_50px_rgba(193,255,114,0.3)]"
         >
-          {/* Background Motif */}
-          <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none">
-            <svg width="100%" height="100%" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 500L250 0H750L500 1000H0V500Z" fill="#C1FF72" />
-              <path d="M1000 500L750 1000H250L500 0H1000V500Z" fill="#C1FF72" />
-            </svg>
-          </div>
-
-          <div className="relative z-10 max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-6xl font-black text-white mb-8 tracking-tighter leading-none">
-              Get privacy compliant in <span className="text-lime">days — not months.</span>
-            </h2>
-            <p className="text-lg md:text-xl text-white/40 mb-12 max-w-xl mx-auto">
-              Launch banners, policies, consent logs, and DSAR workflows from one clean platform. Built for the next generation of trust.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <button className="btn btn-primary px-10 py-5 text-base shadow-[0_0_30px_rgba(193,255,114,0.3)]">
-                Get a Free Privacy Scan
-              </button>
-              <button className="btn btn-outline text-white border-white/20 hover:bg-white hover:text-black px-10 py-5 text-base">
-                Get Started
-              </button>
-            </div>
-          </div>
+          <ShieldCheck size={40} className="text-black" />
         </motion.div>
+        
+        <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight text-white max-w-3xl leading-tight">
+          Stop answering buyer trust questions <span className="text-lime">from scratch</span>
+        </h2>
+        
+        <p className="text-lg md:text-xl text-white/50 mb-12 max-w-2xl leading-relaxed">
+          See how RegulaTrust helps your team centralize privacy evidence, respond faster to due diligence, and look enterprise-ready.
+        </p>
+        
+        <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+          <button className="btn btn-primary px-10 py-5 text-base shadow-[0_10px_40px_rgba(193,255,114,0.3)]">Book a Demo</button>
+          <button className="btn btn-outline border-white/20 text-white hover:bg-white hover:text-black px-10 py-5 text-base flex items-center justify-center gap-2">
+            See a Sample Trust Pack
+            <ArrowRight size={18} />
+          </button>
+        </div>
+        
+        <div className="mt-16 flex items-center gap-6 opacity-30 grayscale pointer-events-none">
+           <Zap size={24} className="text-lime" />
+           <span className="text-[10px] font-black uppercase tracking-[0.5em] text-white">Privacy and Trust Readiness for B2B Teams</span>
+           <Zap size={24} className="text-lime" />
+        </div>
       </div>
+      
+      {/* Background decoration */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-lime/10 blur-[150px] -z-10 rounded-full"></div>
     </section>
   );
 };

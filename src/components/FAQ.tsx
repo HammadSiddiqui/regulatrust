@@ -1,54 +1,65 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React from 'react';
 import { Plus, Minus } from 'lucide-react';
 
-const faqs = [
-  { q: "How quickly can I get compliant?", a: "With RegulaTrust, you can run your first scan and deploy a basic banner and policy in under 15 minutes. Advanced configuration for enterprise sites typically takes a few days." },
-  { q: "Do I need a developer?", a: "No. Our visual editor and one-click deployment make it easy for marketers and founders to manage compliance without Touching a single line of code—although developers love our clean API." },
-  { q: "Can agencies manage multiple clients?", a: "Absolutely. Our Agency plan includes a multi-site dashboard, client permission levels, and white-label reporting options." },
-  { q: "Does RegulaTrust generate privacy policies?", a: "Yes. Our AI-powered policy generator uses your scan results to create dynamic, legally-vetted privacy policies that update automatically when new trackers are detected." },
-  { q: "Can I track consent logs?", a: "Yes. Every consent event is logged in an immutable, encrypted database, providing you with a complete audit trail for regulatory compliance requests." },
-  { q: "How do DSAR workflows work?", a: "When a user submits a data request, RegulaTrust automatically maps their data across your trackers and generates a response template for your review, saving your team hours of manual work." },
+const fags = [
+  {
+    question: "Who is RegulaTrust built for?",
+    answer: "RegulaTrust is designed specifically for B2B SaaS companies, AI startups, and trust-sensitive platforms that are selling into enterprise buyers or regulated markets."
+  },
+  {
+    question: "Is this a replacement for enterprise GRC tools like Vanta or Drata?",
+    answer: "No, we complement GRC tools. While GRC tools focus on internal compliance and SOC2 readiness, RegulaTrust focuses on 'External Trust Operations'—helping you manage evidence and respond to actual buyer due diligence faster."
+  },
+  {
+    question: "Can we still manage cookie consent and privacy basics?",
+    answer: "Absolutely. RegulaTrust includes premium 'Privacy Essentials' like cookie banners, policy generation, and DSAR workflows, but positions them as part of your broader trust readiness strategy."
+  },
+  {
+    question: "How does RegulaTrust help with buyer questionnaires?",
+    answer: "Our Questionnaire Copilot allows you to centralize approved evidence and responses, enabling your team to collaborate on and deliver comprehensive privacy and security reviews in hours."
+  },
+  {
+    question: "Is this suitable for AI companies facing governance questions?",
+    answer: "Yes. We include specific features for AI Governance disclosures, helping you communicate how your models work and how you handle data to satisfy sophisticated enterprise buyers."
+  },
+  {
+    question: "Do I need a dedicated compliance team to use this?",
+    answer: "No. RegulaTrust is built for lean teams. It provides the structure and operational templates you need to look enterprise-ready without hiring a full-time Privacy Officer."
+  }
 ];
 
 const FAQ: React.FC = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = React.useState<number | null>(0);
 
   return (
     <section id="faq" className="section-padding bg-white">
       <div className="container">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center tracking-tight">Frequently Asked Questions</h2>
+        <div className="max-w-3xl mx-auto text-left">
+          <h2 className="text-4xl md:text-5xl font-bold mb-16 tracking-tight">Common questions about <span className="bg-charcoal text-white px-3 py-1 rounded-lg inline-block transform -rotate-1">trust readiness</span></h2>
+          
           <div className="space-y-4">
-            {faqs.map((faq, index) => (
-              <div key={index} className="border border-grey rounded-xl overflow-hidden group">
+            {fags.map((faq, index) => (
+              <div 
+                key={index} 
+                className={`border rounded-2xl transition-all overflow-hidden ${openIndex === index ? 'border-lime bg-off-white shadow-sm' : 'border-grey hover:border-charcoal/20'}`}
+              >
                 <button 
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                  className={`w-full flex items-center justify-between p-6 text-left transition-colors
-                    ${openIndex === index ? 'bg-charcoal text-white' : 'bg-white hover:bg-off-white text-charcoal'}
-                  `}
+                  className="w-full p-6 flex justify-between items-center text-left transition-colors"
                 >
-                  <span className="font-bold tracking-tight">{faq.q}</span>
-                  <div className={`p-1 rounded-full transition-transform duration-300
-                    ${openIndex === index ? 'rotate-180 bg-lime text-black' : 'text-charcoal/20'}
-                  `}>
-                    {openIndex === index ? <Minus size={16} /> : <Plus size={16} />}
+                  <span className="font-bold text-lg md:text-xl pr-8">{faq.question}</span>
+                  <div className={`transition-transform duration-300 ${openIndex === index ? 'rotate-180 text-lime' : 'text-charcoal/20'}`}>
+                    {openIndex === index ? <Minus size={20} /> : <Plus size={20} />}
                   </div>
                 </button>
-                <AnimatePresence>
-                  {openIndex === index && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: 'auto', opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      className="overflow-hidden bg-white"
-                    >
-                      <div className="p-8 text-sm text-charcoal/60 leading-relaxed border-t border-grey">
-                        {faq.a}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                
+                <div 
+                  className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}
+                >
+                  <div className="p-6 pt-0 text-charcoal/60 leading-relaxed max-w-2xl">
+                    {faq.answer}
+                  </div>
+                </div>
               </div>
             ))}
           </div>

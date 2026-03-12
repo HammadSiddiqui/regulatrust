@@ -1,14 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Search, Shield, FileText, Activity, Users, Layout } from 'lucide-react';
+import { ShieldCheck, FileText, Database, Share2, ClipboardCheck, ArrowRight } from 'lucide-react';
 
 const workflowSteps = [
-  { icon: <Search size={24} />, label: "Scan Site" },
-  { icon: <Shield size={24} />, label: "Detect Cookies" },
-  { icon: <Layout size={24} />, label: "Deploy Banner" },
-  { icon: <FileText size={24} />, label: "Generate Policy" },
-  { icon: <Activity size={24} />, label: "Log Consent" },
-  { icon: <Users size={24} />, label: "Handle DSARs" },
+  { icon: <ClipboardCheck size={24} />, label: "Buyer Request" },
+  { icon: <Database size={24} />, label: "Trust Evidence" },
+  { icon: <FileText size={24} />, label: "Approved Answers" },
+  { icon: <Share2 size={24} />, label: "Shared Trust Pack" },
 ];
 
 const Hero: React.FC = () => {
@@ -22,7 +20,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="inline-block px-4 py-1.5 mb-6 text-xs font-bold uppercase tracking-widest bg-black text-lime rounded-full border border-lime/20"
           >
-            Compliance-as-Code for Startups
+            Privacy and Trust Readiness for B2B Teams
           </motion.div>
           
           <motion.h1 
@@ -31,7 +29,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-5xl md:text-7xl font-bold mb-6 tracking-tight"
           >
-            Website privacy compliance, <span className="bg-black text-lime px-3 py-1 rounded-lg inline-block">without the legal chaos</span>
+            Become enterprise-ready <span className="bg-black text-lime px-3 py-1 rounded-lg inline-block">before the deal closes</span>
           </motion.h1>
           
           <motion.p 
@@ -40,7 +38,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-charcoal/70 mb-10 max-w-2xl"
           >
-            RegulaTrust helps startups and agencies scan websites, deploy compliant cookie banners, Launch banners, policies, consent logs, and DSAR workflows from one clean platform. Built for the next generation of trust.
+            Centralize trust evidence, answer buyer due diligence faster, and show customers you take privacy seriously — without bloated GRC software.
           </motion.p>
           
           <motion.div 
@@ -49,8 +47,11 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
           >
-            <button className="btn btn-primary px-8 py-4 text-base">Get a Free Privacy Scan</button>
-            <button className="btn btn-outline px-8 py-4 text-base">Get Started</button>
+            <button className="btn btn-primary px-8 py-4 text-base">Book a Demo</button>
+            <button className="btn btn-outline px-8 py-4 text-base flex items-center justify-center gap-2">
+              See a Sample Trust Pack
+              <ArrowRight size={18} />
+            </button>
           </motion.div>
         </div>
 
@@ -99,56 +100,69 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="relative max-w-5xl mx-auto"
         >
-          <div className="bg-charcoal rounded-2xl p-4 md:p-8 shadow-2xl border border-white/10 overflow-hidden">
+          <div className="bg-charcoal rounded-2xl p-4 md:p-8 shadow-2xl border border-white/10 overflow-hidden text-left">
             <div className="flex items-center gap-2 mb-8 border-b border-white/10 pb-4">
               <div className="flex gap-1.5">
                 <div className="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
                 <div className="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
                 <div className="w-3 h-3 rounded-full bg-[#27C93F]"></div>
               </div>
-              <div className="ml-4 bg-white/5 rounded px-3 py-1 text-[10px] text-white/40 uppercase tracking-widest font-bold">regulatrust-dashboard_v1.0</div>
+              <div className="ml-4 bg-white/5 rounded px-3 py-1 text-[10px] text-white/40 uppercase tracking-widest font-bold">regulatrust-trust-center_v1.2</div>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="col-span-1 md:col-span-2 grid grid-cols-2 gap-4">
+              <div className="col-span-1 md:col-span-2 space-y-4">
                 <div className="bg-white/5 rounded-xl p-6 border border-white/5 hover:border-lime/30 transition-colors">
-                  <div className="text-white/40 text-[10px] uppercase font-bold mb-2 tracking-wider">Website Scan Score</div>
-                  <div className="text-4xl font-bold text-lime">94<span className="text-lg text-white/40">/100</span></div>
-                  <div className="mt-4 h-1.5 w-full bg-white/10 rounded-full overflow-hidden">
-                    <motion.div initial={{ width: 0 }} whileInView={{ width: '94%' }} transition={{ duration: 1 }} className="h-full bg-lime"></motion.div>
+                  <div className="flex justify-between items-start mb-4">
+                    <div className="text-white/40 text-[10px] uppercase font-bold tracking-wider">Active Trust Portfolio</div>
+                    <div className="px-2 py-0.5 bg-lime/10 text-lime text-[10px] font-bold uppercase rounded">Published</div>
                   </div>
-                </div>
-                <div className="bg-white/5 rounded-xl p-6 border border-white/5 hover:border-lime/30 transition-colors">
-                  <div className="text-white/40 text-[10px] uppercase font-bold mb-2 tracking-wider">Cookies Detected</div>
-                  <div className="text-4xl font-bold text-white">42</div>
-                  <div className="text-xs text-lime mt-1 font-bold">+12 since last scan</div>
-                </div>
-                <div className="bg-white/5 rounded-xl p-6 border border-white/5 hover:border-lime/30 transition-colors">
-                  <div className="text-white/40 text-[10px] uppercase font-bold mb-2 tracking-wider">Banners Status</div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-lime animate-pulse"></div>
-                    <span className="text-white font-bold">Active & Compliant</span>
+                  <div className="space-y-3">
+                    {[
+                      { label: "Privacy Policy", status: "Approved" },
+                      { label: "Subprocessor Register", status: "Approved" },
+                      { label: "Data Processing Agreement", status: "In Review" },
+                      { label: "AI Governance Disclosure", status: "Approved" }
+                    ].map((doc, i) => (
+                      <div key={i} className="flex items-center justify-between p-3 bg-white/5 rounded-lg border border-white/5">
+                        <div className="flex items-center gap-3">
+                          <FileText size={14} className="text-white/40" />
+                          <span className="text-sm font-medium text-white/80">{doc.label}</span>
+                        </div>
+                        <span className={`text-[10px] font-bold ${doc.status === 'Approved' ? 'text-lime' : 'text-white/30'}`}>{doc.status}</span>
+                      </div>
+                    ))}
                   </div>
-                </div>
-                <div className="bg-white/5 rounded-xl p-6 border border-white/5 hover:border-lime/30 transition-colors">
-                  <div className="text-white/40 text-[10px] uppercase font-bold mb-2 tracking-wider">Consent Logs</div>
-                  <div className="text-4xl font-bold text-white">12.4k</div>
-                  <div className="text-xs text-white/40 mt-1 uppercase font-bold tracking-widest">Real-time tracking</div>
                 </div>
               </div>
               
-              <div className="bg-white/5 rounded-xl p-6 border border-white/5">
-                <div className="text-white/40 text-[10px] uppercase font-bold mb-4 tracking-wider">DSAR Requests</div>
-                <div className="space-y-4">
-                  {[1, 2, 3].map((i) => (
-                    <div key={i} className="flex items-center justify-between border-b border-white/5 pb-3 last:border-0 last:pb-0">
-                      <div>
-                        <div className="text-xs font-bold text-white">Request #00{i}</div>
-                        <div className="text-[10px] text-white/40 uppercase">Pending Review</div>
+              <div className="space-y-4">
+                <div className="bg-white/5 rounded-xl p-6 border border-white/5 hover:border-lime/30 transition-colors">
+                  <div className="text-white/40 text-[10px] uppercase font-bold mb-4 tracking-wider">Due Diligence Activity</div>
+                  <div className="space-y-4">
+                    {[
+                      { org: "Acme Enterprise", type: "Portal Access", time: "2m ago" },
+                      { org: "Global Tech Inc", type: "Doc Download", time: "1h ago" },
+                      { org: "Stripe", type: "Questionnaire", time: "3h ago" },
+                    ].map((activity, i) => (
+                      <div key={i} className="border-b border-white/5 pb-3 last:border-0 last:pb-0">
+                        <div className="text-xs font-bold text-white">{activity.org}</div>
+                        <div className="flex justify-between items-center mt-1">
+                          <span className="text-[10px] text-white/40 uppercase font-black">{activity.type}</span>
+                          <span className="text-[10px] text-white/20">{activity.time}</span>
+                        </div>
                       </div>
-                      <div className="px-2 py-0.5 rounded bg-lime/10 text-lime text-[8px] font-black uppercase">Action Required</div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
+                </div>
+
+                <div className="bg-lime p-6 rounded-xl text-charcoal">
+                   <div className="flex items-center gap-2 mb-2">
+                     <ShieldCheck size={18} />
+                     <span className="text-[10px] font-bold uppercase tracking-widest">Trust Store Score</span>
+                   </div>
+                   <div className="text-3xl font-black">98%</div>
+                   <p className="text-[10px] mt-2 font-bold opacity-70">EXCELLENT EVIDENCE READINESS</p>
                 </div>
               </div>
             </div>

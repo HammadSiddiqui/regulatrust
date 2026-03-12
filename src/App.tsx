@@ -11,6 +11,7 @@ import WhyNow from './components/WhyNow';
 import FAQ from './components/FAQ';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
+import PrivacyEssentials from './components/PrivacyEssentials';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <ProblemSection />
         <HowItWorks />
         <Features />
+        <PrivacyEssentials />
         <Audience />
         <WhyNow />
         <Pricing />
