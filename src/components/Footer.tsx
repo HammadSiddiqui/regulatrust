@@ -9,17 +9,17 @@ const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-1">
             <Logo variant="white" className="mb-6" />
             <p className="text-sm text-white/40 leading-relaxed max-w-xs">
-              Privacy operations for the next generation of startups. Compliance done properly, without the chaos.
+              Trust Center and Compliance Workspace for the next generation of SaaS. Prove your security, privacy, and compliance posture to win enterprise deals.
             </p>
           </div>
           
           <div>
             <h4 className="text-xs font-black uppercase tracking-[0.2em] mb-6 text-lime">Product</h4>
             <ul className="space-y-4 text-sm text-white/40">
-              <li><a href="#" className="hover:text-white transition-colors">Scanner</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Banners</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Policies</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">DSAR Ops</a></li>
+              <li><a href="#product" className="hover:text-white transition-colors">Trust Center</a></li>
+              <li><a href="#features" className="hover:text-white transition-colors">Compliance Workspace</a></li>
+              <li><a href="#features" className="hover:text-white transition-colors">Due Diligence Hub</a></li>
+              <li><a href="#features" className="hover:text-white transition-colors">Evidence Library</a></li>
             </ul>
           </div>
 
