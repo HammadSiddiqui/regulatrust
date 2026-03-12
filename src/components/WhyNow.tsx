@@ -18,10 +18,10 @@ const WhyNow: React.FC = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-6xl font-black mb-8 leading-none tracking-tighter text-white">
-              Why teams adopt <span className="text-lime">RegulaTrust</span>
+              What is a <span className="text-lime">Trust Center?</span>
             </h2>
             <p className="text-xl text-white/50 mb-12 max-w-lg">
-              Turn security and privacy into a competitive advantage by centralizing compliance artifacts and improving buyer confidence.
+              A Trust Center is a centralized page where companies share their security, privacy, and compliance practices with customers to reduce procurement friction.
             </p>
             <div className="flex gap-4">
               <div className="w-16 h-[2px] bg-lime mt-4"></div>

@@ -39,7 +39,8 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-charcoal/70 mb-10 max-w-2xl"
           >
-            RegulaTrust helps modern SaaS teams launch a professional Trust Center, centralize compliance evidence, and handle customer due diligence without the usual spreadsheet chaos.
+            RegulaTrust helps SaaS companies launch a professional Trust Center, organize compliance evidence, and respond to customer security reviews faster.
+            <span className="block mt-4 text-sm font-medium text-charcoal/50">Centralize security documentation, privacy practices, and compliance artifacts in one structured workspace.</span>
           </motion.p>
           
           <motion.div 
@@ -48,7 +49,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="w-full flex justify-center"
           >
-            <WaitlistForm variant="light" />
+            <WaitlistForm />
           </motion.div>
         </div>
 

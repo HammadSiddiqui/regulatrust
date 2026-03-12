@@ -7,7 +7,7 @@ const audienceCards = [
     icon: <Building2 className="text-black" />,
     title: "SaaS Startups",
     desc: "Speed up enterprise procurement by centralizing trust evidence and launching a professional Trust Center in minutes.",
-    benefits: ["Enterprise Ready", "Sales Acceleration", "Trust Infrastructure"]
+    benefits: ["Enterprise Ready", "Sales Velocity", "Security Transparency"]
   },
   {
     icon: <ShieldCheck className="text-black" />,
@@ -62,7 +62,7 @@ const Audience: React.FC = () => {
         
         <div className="mt-16 pt-8 border-t border-white/10 text-left">
             <p className="text-xs text-white/30 font-bold uppercase tracking-widest">
-                Note: RegulaTrust is built for B2B privacy operations. Not for personal blogs or basic brochure websites.
+                Note: RegulaTrust is built for B2B security and privacy operations. Not for personal blogs or basic brochure websites.
             </p>
         </div>
       </div>

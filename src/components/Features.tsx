@@ -7,21 +7,21 @@ const strategicPillars = [
     id: 'center', 
     title: 'Trust Center', 
     icon: <Globe size={20} />, 
-    description: 'Launch a professional, customer-facing portal to showcase your live trust posture.',
-    points: ['Public or gated access', 'Security overview pages', 'Subprocessor registry', 'Privacy transparency hub']
+    description: 'A public transparency portal where companies share their security posture, privacy practices, and compliance information.',
+    points: ['Security controls overview', 'Public or gated access', 'Subprocessor registry', 'Privacy transparency hub']
   },
   { 
     id: 'workspace', 
     title: 'Compliance Workspace', 
     icon: <Database size={20} />, 
-    description: 'Centralize policies, controls, and evidence for ISO 27001, SOC 2, and GDPR.',
-    points: ['Evidence repository', 'Policy management', 'Review workflows', 'Expiry reminders']
+    description: 'A central place to manage policies, documentation, and audit evidence for SOC 2, ISO 27001, and GDPR.',
+    points: ['Evidence repository', 'Policy management', 'Review workflows', 'Stay audit-ready']
   },
   { 
     id: 'due-diligence', 
     title: 'Due Diligence Hub', 
     icon: <ClipboardCheck size={20} />, 
-    description: 'Accelerate enterprise procurement by securely sharing compliance documentation.',
+    description: 'Tools to handle customer security reviews and documentation requests efficiently.',
     points: ['Controlled document sharing', 'Review & approval tracks', 'Audit-ready documentation', 'Deal acceleration metrics']
   },
 ];

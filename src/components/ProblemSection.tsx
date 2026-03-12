@@ -27,10 +27,10 @@ const ProblemSection: React.FC = () => {
             
             <div className="space-y-6">
               {[
-                { icon: <Mail size={18} />, text: "Security documents are scattered across tools and inboxes" },
-                { icon: <AlertCircle size={18} />, text: "Compliance evidence is hard to maintain and update" },
                 { icon: <MessageSquare size={18} />, text: "Sales teams constantly answer repetitive security questionnaires" },
-                { icon: <Clock size={18} />, text: "Customers request privacy and security documentation before purchasing" },
+                { icon: <Mail size={18} />, text: "Security and compliance documents are scattered across tools and inboxes" },
+                { icon: <Clock size={18} />, text: "Prospective customers request deep due diligence before every purchase" },
+                { icon: <AlertCircle size={18} />, text: "Lack of security transparency slows down enterprise procurement cycles" },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3 text-sm text-charcoal/50">
                   <span className="mt-0.5 text-red-400">{item.icon}</span>

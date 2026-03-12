@@ -21,11 +21,11 @@ const FinalCTA: React.FC = () => {
         </h2>
         
         <p className="text-lg md:text-xl text-white/50 mb-12 max-w-2xl leading-relaxed">
-          Launch your Trust Center, organize your compliance evidence, and move through customer due diligence faster.
+          Launch your Trust Center, organize your compliance evidence, and respond to customer security reviews faster.
         </p>
         
         <div className="w-full max-w-md mx-auto">
-          <WaitlistForm variant="dark" />
+          <WaitlistForm />
         </div>
         
         <div className="mt-16 flex items-center gap-6 opacity-30 grayscale pointer-events-none">

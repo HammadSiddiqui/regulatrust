@@ -15,8 +15,8 @@ const PrivacyEssentials: React.FC = () => {
       <div className="container">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl text-left">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight text-charcoal">Built for teams pursuing <span className="text-charcoal/40">GDPR, ISO 27001, and SOC 2</span></h2>
-            <p className="text-base text-charcoal/60 leading-relaxed">RegulaTrust helps organizations become audit-ready and stay evidence-ready without the manual overhead.</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight text-charcoal">Infrastructure for <span className="text-charcoal/40">GDPR, ISO 27001, and SOC 2</span></h2>
+            <p className="text-base text-charcoal/60 leading-relaxed">RegulaTrust helps organizations organize compliance artifacts, maintain transparency, and stay audit-ready throughout the year.</p>
           </div>
           <button className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-charcoal hover:text-lime transition-colors">
             Explore All Features
