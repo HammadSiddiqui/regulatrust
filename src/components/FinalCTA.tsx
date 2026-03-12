@@ -17,11 +17,11 @@ const FinalCTA: React.FC = () => {
         </motion.div>
         
         <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight text-white max-w-3xl leading-tight">
-          Turn trust into a <span className="text-lime">competitive advantage</span>
+          Launch your company’s <span className="text-lime">Trust Center</span>
         </h2>
         
         <p className="text-lg md:text-xl text-white/50 mb-12 max-w-2xl leading-relaxed">
-          Launch your Trust Center, organize your compliance evidence, and respond to customer security reviews faster.
+          RegulaTrust helps you present your security and compliance posture clearly, professionally, and securely.
         </p>
         
         <div className="w-full max-w-md mx-auto">

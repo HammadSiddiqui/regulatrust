@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-5xl md:text-7xl font-bold mb-6 tracking-tight"
           >
-            Turn Security, Privacy, and Compliance into a <span className="bg-black text-lime px-3 py-1 rounded-lg inline-block">Competitive Advantage</span>
+            Build a <span className="bg-black text-lime px-3 py-1 rounded-lg inline-block">Trust Center</span> for your company
           </motion.h1>
           
           <motion.p 
@@ -39,8 +39,8 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-charcoal/70 mb-10 max-w-2xl"
           >
-            RegulaTrust helps SaaS companies launch a professional Trust Center, organize compliance evidence, and respond to customer security reviews faster.
-            <span className="block mt-4 text-sm font-medium text-charcoal/50">Centralize security documentation, privacy practices, and compliance artifacts in one structured workspace.</span>
+            Share your security, privacy, and compliance posture with customers — without endless questionnaires.
+            <span className="block mt-4 text-sm font-medium text-charcoal/50">RegulaTrust helps companies publish a modern Trust Center where customers can review policies, certifications, subprocessors, and security documentation in one secure place.</span>
           </motion.p>
           
           <motion.div 

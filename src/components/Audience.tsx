@@ -1,25 +1,25 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Building2, ShieldCheck } from 'lucide-react';
+import { Building2, ShieldCheck, Target } from 'lucide-react';
 
 const audienceCards = [
   {
     icon: <Building2 className="text-black" />,
-    title: "SaaS Startups",
-    desc: "Speed up enterprise procurement by centralizing trust evidence and launching a professional Trust Center in minutes.",
-    benefits: ["Enterprise Ready", "Sales Velocity", "Security Transparency"]
+    title: "SaaS Companies",
+    desc: "Speed up enterprise procurement by launching a professional Trust Center where customers can review your security posture in minutes.",
+    benefits: ["SaaS Leaders", "Sales Velocity", "Security Transparency"]
   },
   {
     icon: <ShieldCheck className="text-black" />,
-    title: "Regulated Vendors",
-    desc: "Built for Fintech, Healthtech, and HRtech teams who face deep security scrutiny from regulated enterprise buyers.",
-    benefits: ["GDPR/HIPAA Ready", "Subprocessor Transparency", "Audit Records"]
+    title: "Security & Compliance",
+    desc: "Built for teams who manage SOC 2, ISO 27001, or GDPR and need a centralized place to present evidence to external auditors and customers.",
+    benefits: ["CTOs & Engineering", "Compliance Teams", "Audit Readiness"]
   },
   {
-    icon: <ShieldCheck className="text-black" />,
-    title: "Audit Candidates",
-    desc: "Perfect for companies preparing for SOC 2 or ISO 27001 who need to centralize their evidence and policy governance.",
-    benefits: ["SOC 2 Prep", "ISO 27001 Readiness", "Evidence Repository"]
+    icon: <Target className="text-black" />,
+    title: "Enterprise Vendors",
+    desc: "Perfect for startups selling to large enterprises who regularly receive deep security questionnaires and documentation requests.",
+    benefits: ["Enterprise Ready", "Vendor Risk Hub", "Customer Trust"]
   }
 ];
 
@@ -28,8 +28,8 @@ const Audience: React.FC = () => {
     <section id="audience" className="section-padding bg-black text-white relative overflow-hidden">
       <div className="container relative z-10">
         <div className="max-w-3xl mb-20 text-left">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-white">Who <span className="text-lime">RegulaTrust</span> is for</h2>
-          <p className="text-lg text-white/50">Purpose-built for organizations that need to prove their security, privacy, and compliance posture to win.</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-white">Built for companies that <span className="text-lime">take trust seriously</span></h2>
+          <p className="text-lg text-white/50">RegulaTrust is designed for companies that regularly receive security and compliance questions from customers.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -58,12 +58,6 @@ const Audience: React.FC = () => {
               </ul>
             </motion.div>
           ))}
-        </div>
-        
-        <div className="mt-16 pt-8 border-t border-white/10 text-left">
-            <p className="text-xs text-white/30 font-bold uppercase tracking-widest">
-                Note: RegulaTrust is built for B2B security and privacy operations. Not for personal blogs or basic brochure websites.
-            </p>
         </div>
       </div>
       

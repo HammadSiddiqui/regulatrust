@@ -1,28 +1,28 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Database, Globe, ClipboardCheck, ArrowUpRight, Zap, Target } from 'lucide-react';
+import { Database, Globe, ClipboardCheck, ArrowUpRight, Zap, Target, Shield } from 'lucide-react';
 
 const strategicPillars = [
   { 
-    id: 'center', 
-    title: 'Trust Center', 
+    id: 'documentation', 
+    title: 'Security & Privacy', 
     icon: <Globe size={20} />, 
-    description: 'A public transparency portal where companies share their security posture, privacy practices, and compliance information.',
-    points: ['Security controls overview', 'Public or gated access', 'Subprocessor registry', 'Privacy transparency hub']
+    description: 'Centralize all the security and privacy documentation your customers expect in one professional home.',
+    points: ['Security policies', 'Privacy documentation', 'Compliance certifications', 'GDPR & SOC 2 artifacts']
   },
   { 
-    id: 'workspace', 
-    title: 'Compliance Workspace', 
+    id: 'records', 
+    title: 'Trust Records', 
     icon: <Database size={20} />, 
-    description: 'A central place to manage policies, documentation, and audit evidence for SOC 2, ISO 27001, and GDPR.',
-    points: ['Evidence repository', 'Policy management', 'Review workflows', 'Stay audit-ready']
+    description: 'Maintain live registries of your subprocessors and security FAQs to demonstrate ongoing maturity.',
+    points: ['Subprocessor lists', 'Security FAQs', 'Vendor risk records', 'Audit evidence']
   },
   { 
-    id: 'due-diligence', 
-    title: 'Due Diligence Hub', 
+    id: 'sharing', 
+    title: 'Secure Sharing', 
     icon: <ClipboardCheck size={20} />, 
-    description: 'Tools to handle customer security reviews and documentation requests efficiently.',
-    points: ['Controlled document sharing', 'Review & approval tracks', 'Audit-ready documentation', 'Deal acceleration metrics']
+    description: 'Control how your most sensitive documents are shared with customers and prospects.',
+    points: ['Gated document access', 'NDA click-throughs', 'Access approval workflows', 'Secure download logs']
   },
 ];
 
@@ -33,8 +33,12 @@ const Features: React.FC = () => {
     <section id="features" className="section-padding bg-off-white">
       <div className="container">
         <div className="max-w-3xl mb-16 text-left">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Everything buyers expect. <span className="bg-black text-lime px-3 py-1 rounded-lg inline-block">One unified place.</span></h2>
-          <p className="text-lg text-charcoal/60">RegulaTrust centralizes your trust posture so you can look mature and close deals faster.</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Everything customers ask for. <span className="bg-black text-lime px-3 py-1 rounded-lg inline-block">In one place.</span></h2>
+          <p className="text-lg text-charcoal/60">RegulaTrust centralizes your trust posture so you can respond to requests faster and close deals with confidence.</p>
+          <div className="mt-4 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black text-lime text-[10px] font-bold uppercase tracking-widest border border-lime/20">
+             <Shield size={10} />
+             Sensitive documents can be gated and shared securely
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">

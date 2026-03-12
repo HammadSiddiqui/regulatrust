@@ -1,6 +1,8 @@
 import AnnouncementBar from './components/AnnouncementBar';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import TrustMockup from './components/TrustMockup';
+import ComparisonSection from './components/ComparisonSection';
 import TrustStrip from './components/TrustStrip';
 import ProblemSection from './components/ProblemSection';
 import HowItWorks from './components/HowItWorks';
@@ -20,13 +22,15 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <TrustMockup />
+        <ComparisonSection />
         <TrustStrip />
         <ProblemSection />
         <HowItWorks />
         <Features />
-        <PrivacyEssentials />
         <Audience />
         <WhyNow />
+        <PrivacyEssentials />
         <Pricing />
         <FAQ />
         <FinalCTA />

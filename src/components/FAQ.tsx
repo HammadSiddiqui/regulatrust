@@ -21,6 +21,10 @@ const faqs = [
   {
     question: "Does RegulaTrust replace my security questionnaire responses?",
     answer: "RegulaTrust provides a 'Due Diligence Hub' where you can centralize pre-approved evidence and share 'Trust Packs' with buyers, reducing the repetitive work of answering identical procurement questions."
+  },
+  {
+    question: "Does RegulaTrust make my company GDPR compliant?",
+    answer: "No. RegulaTrust does not make your company GDPR compliant or replace legal or compliance programs. Achieving compliance requires internal policies, processes, and controls within your organization. RegulaTrust helps you share and demonstrate evidence of your existing compliance posture by publishing documents such as privacy policies, certifications, subprocessors, and security materials in a Trust Center so customers and partners can review them easily."
   }
 ];
 
