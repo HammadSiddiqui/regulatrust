@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, ShieldCheck, Zap } from 'lucide-react';
+import { ShieldCheck, Zap } from 'lucide-react';
+import WaitlistForm from './WaitlistForm';
 
 const FinalCTA: React.FC = () => {
   return (
@@ -23,12 +24,8 @@ const FinalCTA: React.FC = () => {
           Launch your Trust Center, organize your compliance evidence, and move through customer due diligence faster.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-          <button className="btn btn-primary px-10 py-5 text-base shadow-[0_10px_40px_rgba(193,255,114,0.3)]">Start Free Trial</button>
-          <button className="btn btn-outline border-white/20 text-white hover:bg-white hover:text-black px-10 py-5 text-base flex items-center justify-center gap-2">
-            Book a Demo
-            <ArrowRight size={18} />
-          </button>
+        <div className="w-full max-w-md mx-auto">
+          <WaitlistForm variant="dark" />
         </div>
         
         <div className="mt-16 flex items-center gap-6 opacity-30 grayscale pointer-events-none">

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ShieldCheck, FileText, Database, Share2, ArrowRight } from 'lucide-react';
+import { ShieldCheck, FileText, Database, Share2 } from 'lucide-react';
+import WaitlistForm from './WaitlistForm';
 
 const workflowSteps = [
   { icon: <FileText size={24} />, label: "Security Policies" },
@@ -45,13 +46,9 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
+            className="w-full flex justify-center"
           >
-            <button className="btn btn-primary px-8 py-4 text-base">Book a Demo</button>
-            <button className="btn btn-outline px-8 py-4 text-base flex items-center justify-center gap-2">
-              View Trust Center
-              <ArrowRight size={18} />
-            </button>
+            <WaitlistForm variant="light" />
           </motion.div>
         </div>
 

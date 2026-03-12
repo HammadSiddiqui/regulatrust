@@ -18,8 +18,7 @@ const Navbar: React.FC = () => {
           </nav>
         </div>
         <div className="flex items-center gap-4">
-          <button className="btn btn-outline hidden sm:flex">Log In</button>
-          <button className="btn btn-primary">Book a Demo</button>
+          <a href="#product" className="btn btn-primary px-6 py-2.5 text-xs">Join Waitlist</a>
         </div>
       </div>
     </header>
