@@ -6,6 +6,8 @@
 }
 
 @theme {
+  --color-primary: var(--color-lime);
+  --color-secondary: var(--color-black);
   --color-lime: #C1FF72;
   --color-black: #000000;
   --color-off-white: #F7F8F2;

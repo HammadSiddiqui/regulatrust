@@ -1,42 +1,31 @@
-import AnnouncementBar from './components/AnnouncementBar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import TrustMockup from './components/TrustMockup';
-import ComparisonSection from './components/ComparisonSection';
-import TrustStrip from './components/TrustStrip';
-import ProblemSection from './components/ProblemSection';
-import HowItWorks from './components/HowItWorks';
-import Features from './components/Features';
-import Audience from './components/Audience';
-import Pricing from './components/Pricing';
-import WhyNow from './components/WhyNow';
-import FAQ from './components/FAQ';
-import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
-import PrivacyEssentials from './components/PrivacyEssentials';
+import Home from './pages/Home';
+import WhatIsTrustCenter from './pages/resources/WhatIsTrustCenter';
+import TrustCenterForSaaS from './pages/resources/TrustCenterForSaaS';
+import ShareSOC2 from './pages/resources/ShareSOC2';
+import SecurityQuestionnaires from './pages/resources/SecurityQuestionnaires';
+import SubprocessorTransparency from './pages/resources/SubprocessorTransparency';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <AnnouncementBar />
-      <Navbar />
-      <main>
-        <Hero />
-        <TrustMockup />
-        <ComparisonSection />
-        <TrustStrip />
-        <ProblemSection />
-        <HowItWorks />
-        <Features />
-        <Audience />
-        <WhyNow />
-        <PrivacyEssentials />
-        <Pricing />
-        <FAQ />
-        <FinalCTA />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="min-h-screen flex flex-col">
+        <Navbar />
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/resources/what-is-a-trust-center" element={<WhatIsTrustCenter />} />
+            <Route path="/resources/trust-center-for-saas" element={<TrustCenterForSaaS />} />
+            <Route path="/resources/share-soc2-with-customers" element={<ShareSOC2 />} />
+            <Route path="/resources/security-questionnaires" element={<SecurityQuestionnaires />} />
+            <Route path="/resources/subprocessor-transparency" element={<SubprocessorTransparency />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

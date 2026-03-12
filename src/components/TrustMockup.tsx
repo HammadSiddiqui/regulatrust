@@ -39,10 +39,10 @@ const TrustMockup: React.FC = () => {
           className="relative max-w-5xl mx-auto"
         >
           {/* Main Portal Container */}
-          <div className="bg-off-white rounded-3xl border border-grey shadow-2xl overflow-hidden flex flex-col md:flex-row h-[600px]">
+          <div className="bg-off-white rounded-3xl border border-grey shadow-2xl overflow-hidden flex flex-col md:flex-row min-h-[600px] md:h-[600px]">
             
             {/* Sidebar */}
-            <div className="w-full md:w-64 bg-white border-r border-grey p-6 flex flex-col">
+            <div className="w-full md:w-64 bg-white border-r border-grey p-6 flex flex-col shrink-0">
               <div className="flex items-center gap-3 mb-10">
                 <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
                   <Shield size={18} className="text-lime" />
@@ -63,7 +63,7 @@ const TrustMockup: React.FC = () => {
                 ))}
               </nav>
 
-              <div className="mt-auto p-4 bg-black rounded-2xl text-white">
+              <div className="mt-8 p-4 bg-black rounded-2xl text-white">
                 <div className="flex items-center gap-2 mb-2">
                   <div className="w-2 h-2 bg-lime rounded-full animate-pulse" />
                   <span className="text-[10px] uppercase font-black tracking-widest text-lime">Live Status</span>
@@ -73,8 +73,8 @@ const TrustMockup: React.FC = () => {
             </div>
 
             {/* Content Area */}
-            <div className="flex-1 p-8 overflow-y-auto bg-off-white">
-              <div className="flex justify-between items-end mb-10">
+            <div className="flex-1 p-6 md:p-10 overflow-y-auto bg-off-white relative">
+              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 mb-10">
                 <div>
                   <h3 className="text-2xl font-bold mb-1">Security Overview</h3>
                   <p className="text-sm text-charcoal/40 font-medium">Last updated 2 days ago</p>
@@ -90,7 +90,7 @@ const TrustMockup: React.FC = () => {
                   <motion.div 
                     key={i}
                     whileHover={{ scale: 1.02 }}
-                    className="bg-white p-5 rounded-2xl border border-grey shadow-sm hover:border-lime transition-all group"
+                    className="bg-white p-5 rounded-2xl border border-grey shadow-sm hover:border-lime transition-all group cursor-default"
                   >
                     <div className="flex justify-between items-start mb-4">
                       <div className="p-2.5 bg-off-white rounded-xl group-hover:bg-lime transition-colors">
@@ -116,7 +116,7 @@ const TrustMockup: React.FC = () => {
               {/* Trust Badges Mockup */}
               <div className="mt-12 pt-8 border-t border-grey">
                 <p className="text-[10px] font-black uppercase tracking-widest text-charcoal/30 mb-6">Security Certifications</p>
-                <div className="flex flex-wrap gap-8 opacity-40 grayscale">
+                <div className="flex flex-wrap gap-8 opacity-40 grayscale pb-8">
                    {/* Mock Badges */}
                    <div className="flex items-center gap-2">
                      <div className="w-8 h-8 rounded-full border-2 border-charcoal flex items-center justify-center font-black text-[8px]">SOC2</div>
@@ -135,31 +135,37 @@ const TrustMockup: React.FC = () => {
             </div>
           </div>
 
-          {/* Floating UI Elements for Depth */}
+          {/* Floating UI Elements for Depth - Cleanly Positioned */}
           <motion.div 
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute -top-6 -right-6 hidden lg:block bg-lime p-4 rounded-2xl shadow-xl border border-black/5"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="absolute -top-10 -right-4 hidden lg:block bg-lime p-4 rounded-2xl shadow-xl border border-black/5 z-20"
           >
             <div className="flex items-center gap-3">
-              <Users size={20} />
+              <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center text-lime">
+                <Users size={20} />
+              </div>
               <div className="text-left">
-                <div className="text-[10px] font-black uppercase tracking-widest leading-none mb-1">Access Request</div>
-                <div className="text-xs font-bold leading-none">Acme Corp Enterprise</div>
+                <div className="text-[10px] font-black uppercase tracking-widest leading-none mb-1 text-black/50">Access Request</div>
+                <div className="text-sm font-black text-black leading-none">Acme Corp Enterprise</div>
               </div>
             </div>
           </motion.div>
 
           <motion.div 
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-            className="absolute bottom-12 -left-12 hidden lg:block bg-black text-white p-4 rounded-2xl shadow-xl"
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="absolute -bottom-8 -left-8 hidden lg:block bg-black text-white p-5 rounded-3xl shadow-2xl z-20 border border-white/10"
           >
-            <div className="flex items-center gap-3">
-              <Lock size={20} className="text-lime" />
+            <div className="flex items-center gap-4">
+              <div className="w-10 h-10 bg-lime rounded-xl flex items-center justify-center text-black">
+                <Lock size={20} />
+              </div>
               <div className="text-left">
                 <div className="text-[10px] font-black uppercase tracking-widest text-lime leading-none mb-1">Encrypted</div>
-                <div className="text-xs font-bold leading-none">Secure Vault Enabled</div>
+                <div className="text-sm font-bold leading-none">Secure Vault Enabled</div>
               </div>
             </div>
           </motion.div>
