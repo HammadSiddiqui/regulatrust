@@ -1,30 +1,26 @@
 import React from 'react';
 import { Plus, Minus } from 'lucide-react';
 
-const fags = [
+const faqs = [
   {
-    question: "Who is RegulaTrust built for?",
-    answer: "RegulaTrust is designed specifically for B2B SaaS companies, AI startups, and trust-sensitive platforms that are selling into enterprise buyers or regulated markets."
+    question: "What is RegulaTrust?",
+    answer: "RegulaTrust is a Trust Center and Compliance Workspace designed to help organizations prove their security, privacy, and compliance posture to win enterprise deals."
   },
   {
-    question: "Is this a replacement for enterprise GRC tools like Vanta or Drata?",
-    answer: "No, we complement GRC tools. While GRC tools focus on internal compliance and SOC2 readiness, RegulaTrust focuses on 'External Trust Operations'—helping you manage evidence and respond to actual buyer due diligence faster."
+    question: "How is RegulaTrust different from GRC tools like Vanta or Drata?",
+    answer: "Most GRC tools focus on 'Internal GRC'—getting you audit-ready for SOC 2 or ISO 27001. RegulaTrust focuses on 'External Trust Operations'—the process of centralizing evidence and managing customer due diligence reviews."
   },
   {
-    question: "Can we still manage cookie consent and privacy basics?",
-    answer: "Absolutely. RegulaTrust includes premium 'Privacy Essentials' like cookie banners, policy generation, and DSAR workflows, but positions them as part of your broader trust readiness strategy."
+    question: "Do I need an existing certification (like SOC 2) to use this?",
+    answer: "No. RegulaTrust helps you arrive at 'audit-readiness' by providing the infrastructure to manage your policies and evidence from day one, whether you're pursuing a certification now or later."
   },
   {
-    question: "How does RegulaTrust help with buyer questionnaires?",
-    answer: "Our Questionnaire Copilot allows you to centralize approved evidence and responses, enabling your team to collaborate on and deliver comprehensive privacy and security reviews in hours."
+    question: "How does the Trust Center work?",
+    answer: "Your Trust Center can be public or password-protected. it allows you to showcase your security overview, subprocessor lists, and policies in a professional, live portal that buyers can trust."
   },
   {
-    question: "Is this suitable for AI companies facing governance questions?",
-    answer: "Yes. We include specific features for AI Governance disclosures, helping you communicate how your models work and how you handle data to satisfy sophisticated enterprise buyers."
-  },
-  {
-    question: "Do I need a dedicated compliance team to use this?",
-    answer: "No. RegulaTrust is built for lean teams. It provides the structure and operational templates you need to look enterprise-ready without hiring a full-time Privacy Officer."
+    question: "Does RegulaTrust replace my security questionnaire responses?",
+    answer: "RegulaTrust provides a 'Due Diligence Hub' where you can centralize pre-approved evidence and share 'Trust Packs' with buyers, reducing the repetitive work of answering identical procurement questions."
   }
 ];
 
@@ -38,7 +34,7 @@ const FAQ: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-16 tracking-tight">Common questions about <span className="bg-charcoal text-white px-3 py-1 rounded-lg inline-block transform -rotate-1">trust readiness</span></h2>
           
           <div className="space-y-4">
-            {fags.map((faq, index) => (
+            {faqs.map((faq, index) => (
               <div 
                 key={index} 
                 className={`border rounded-2xl transition-all overflow-hidden ${openIndex === index ? 'border-lime bg-off-white shadow-sm' : 'border-grey hover:border-charcoal/20'}`}

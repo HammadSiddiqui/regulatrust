@@ -16,24 +16,24 @@ const FinalCTA: React.FC = () => {
         </motion.div>
         
         <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight text-white max-w-3xl leading-tight">
-          Stop answering buyer trust questions <span className="text-lime">from scratch</span>
+          Trust shouldn't slow down <span className="text-lime">your sales</span>
         </h2>
         
         <p className="text-lg md:text-xl text-white/50 mb-12 max-w-2xl leading-relaxed">
-          See how RegulaTrust helps your team centralize privacy evidence, respond faster to due diligence, and look enterprise-ready.
+          Launch a professional trust center, centralize your compliance evidence, and move through customer due diligence faster.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
           <button className="btn btn-primary px-10 py-5 text-base shadow-[0_10px_40px_rgba(193,255,114,0.3)]">Book a Demo</button>
           <button className="btn btn-outline border-white/20 text-white hover:bg-white hover:text-black px-10 py-5 text-base flex items-center justify-center gap-2">
-            See a Sample Trust Pack
+            View Trust Center
             <ArrowRight size={18} />
           </button>
         </div>
         
         <div className="mt-16 flex items-center gap-6 opacity-30 grayscale pointer-events-none">
            <Zap size={24} className="text-lime" />
-           <span className="text-[10px] font-black uppercase tracking-[0.5em] text-white">Privacy and Trust Readiness for B2B Teams</span>
+            <span className="text-[10px] font-black uppercase tracking-[0.5em] text-white">Trust Center and Compliance Workspace</span>
            <Zap size={24} className="text-lime" />
         </div>
       </div>

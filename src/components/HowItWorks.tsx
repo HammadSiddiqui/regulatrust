@@ -2,9 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const steps = [
-  { number: "01", title: "Centralize your trust evidence", desc: "Keep policies, subprocessors, DPAs, and SOC2 evidence in one secure vault." },
-  { number: "02", title: "Reuse approved answers", desc: "Respond faster to buyer privacy and security reviews using your library of verified responses." },
-  { number: "03", title: "Share clear proof faster", desc: "Deliver everything buyers expect in a clean, professional Trust Pack that closes deals." },
+  { number: "01", title: "Trust Center", desc: "Customer-facing page displaying security posture, compliance status, subprocessors, policies, and reports." },
+  { number: "02", title: "Compliance Workspace", desc: "Internal workspace for managing policies, controls, and compliance evidence." },
+  { number: "03", title: "Due Diligence Hub", desc: "Structured place to respond to customer security and privacy reviews." },
+  { number: "04", title: "Privacy Transparency", desc: "Centralized view of data practices, subprocessors, and privacy documentation." },
 ];
 
 const HowItWorks: React.FC = () => {
@@ -12,11 +13,11 @@ const HowItWorks: React.FC = () => {
     <section className="section-padding bg-white relative overflow-hidden">
       <div className="container relative z-10">
         <div className="max-w-3xl mb-20 text-left">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">From trust chaos to <span className="bg-black text-lime px-3 py-1 rounded-lg inline-block">buyer-ready</span></h2>
-          <p className="text-lg text-charcoal/60">We've automated the complex due-diligence workflow into a simple, operational process.</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">One platform to <span className="bg-black text-lime px-3 py-1 rounded-lg inline-block">manage and present trust</span></h2>
+          <p className="text-lg text-charcoal/60">We provide the centralized infrastructure your team needs to prove security, privacy, and compliance.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
           {steps.map((step, index) => (
             <motion.div 
               key={index}
@@ -25,8 +26,8 @@ const HowItWorks: React.FC = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               className={`p-10 border-grey group hover:bg-off-white transition-all cursor-default
-                ${index < 2 ? 'md:border-r' : ''}
-                border-b md:border-b-0
+                ${index < steps.length - 1 ? 'lg:border-r' : ''}
+                border-b lg:border-b-0
               `}
             >
               <div className="flex flex-col gap-6">

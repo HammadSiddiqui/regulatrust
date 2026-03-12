@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ShieldCheck, FileText, Database, Share2, ClipboardCheck, ArrowRight } from 'lucide-react';
+import { ShieldCheck, FileText, Database, Share2, ArrowRight } from 'lucide-react';
 
 const workflowSteps = [
-  { icon: <ClipboardCheck size={24} />, label: "Buyer Request" },
-  { icon: <Database size={24} />, label: "Trust Evidence" },
-  { icon: <FileText size={24} />, label: "Approved Answers" },
-  { icon: <Share2 size={24} />, label: "Shared Trust Pack" },
+  { icon: <FileText size={24} />, label: "Security Policies" },
+  { icon: <Database size={24} />, label: "Compliance Evidence" },
+  { icon: <ShieldCheck size={24} />, label: "Trust Center" },
+  { icon: <Share2 size={24} />, label: "Customer Confidence" },
 ];
 
 const Hero: React.FC = () => {
@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="inline-block px-4 py-1.5 mb-6 text-xs font-bold uppercase tracking-widest bg-black text-lime rounded-full border border-lime/20"
           >
-            Privacy and Trust Readiness for B2B Teams
+            Trust Center and Compliance Workspace
           </motion.div>
           
           <motion.h1 
@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-5xl md:text-7xl font-bold mb-6 tracking-tight"
           >
-            Become enterprise-ready <span className="bg-black text-lime px-3 py-1 rounded-lg inline-block">before the deal closes</span>
+            Turn Security, Privacy, and Compliance into a <span className="bg-black text-lime px-3 py-1 rounded-lg inline-block">Competitive Advantage</span>
           </motion.h1>
           
           <motion.p 
@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-charcoal/70 mb-10 max-w-2xl"
           >
-            Centralize trust evidence, answer buyer due diligence faster, and show customers you take privacy seriously — without bloated GRC software.
+            RegulaTrust helps modern SaaS teams launch a professional Trust Center, centralize compliance evidence, and handle customer due diligence without the usual spreadsheet chaos.
           </motion.p>
           
           <motion.div 
@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
           >
             <button className="btn btn-primary px-8 py-4 text-base">Book a Demo</button>
             <button className="btn btn-outline px-8 py-4 text-base flex items-center justify-center gap-2">
-              See a Sample Trust Pack
+              View Trust Center
               <ArrowRight size={18} />
             </button>
           </motion.div>

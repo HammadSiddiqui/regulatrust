@@ -13,13 +13,13 @@ const Navbar: React.FC = () => {
             <a href="#product" className="hover:text-lime transition-colors">Product</a>
             <a href="#features" className="hover:text-lime transition-colors">Features</a>
             <a href="#pricing" className="hover:text-lime transition-colors">Pricing</a>
-            <a href="#agencies" className="hover:text-lime transition-colors">For Agencies</a>
+            <a href="#audience" className="hover:text-lime transition-colors">Who it's for</a>
             <a href="#faq" className="hover:text-lime transition-colors">FAQ</a>
           </nav>
         </div>
         <div className="flex items-center gap-4">
-          <button className="btn btn-outline hidden sm:flex">Get Started</button>
-          <button className="btn btn-primary">Get Free Scan</button>
+          <button className="btn btn-outline hidden sm:flex">Log In</button>
+          <button className="btn btn-primary">Book a Demo</button>
         </div>
       </div>
     </header>

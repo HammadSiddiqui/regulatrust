@@ -7,8 +7,8 @@ const ProblemSection: React.FC = () => {
     <section className="section-padding bg-off-white">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Enterprise buyers ask questions your team <span className="bg-black text-lime px-3 py-1 rounded-lg inline-block transform -rotate-1">still answers manually</span></h2>
-          <p className="text-lg text-charcoal/60">Privacy and security questionnaires shouldn't be a bottleneck for your sales cycle. Stop the spreadsheet chaos.</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Winning enterprise customers requires <span className="bg-black text-lime px-3 py-1 rounded-lg inline-block transform -rotate-1">proof, not promises</span></h2>
+          <p className="text-lg text-charcoal/60">Security, privacy, and compliance documentation shouldn't be a bottleneck. Stop the spreadsheet chaos and start proving trust.</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -27,10 +27,10 @@ const ProblemSection: React.FC = () => {
             
             <div className="space-y-6">
               {[
-                { icon: <Mail size={18} />, text: "Trust evidence scattered across inboxes and Slack" },
-                { icon: <MessageSquare size={18} />, text: "Sales, ops, and legal repeat the same manual answers" },
-                { icon: <AlertCircle size={18} />, text: "Buyers ask for DPA details and subprocessors on every deal" },
-                { icon: <Clock size={18} />, text: "Manual reviews delay procurement by weeks" },
+                { icon: <Mail size={18} />, text: "Security documents are scattered across tools and inboxes" },
+                { icon: <AlertCircle size={18} />, text: "Compliance evidence is hard to maintain and update" },
+                { icon: <MessageSquare size={18} />, text: "Sales teams constantly answer repetitive security questionnaires" },
+                { icon: <Clock size={18} />, text: "Customers request privacy and security documentation before purchasing" },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3 text-sm text-charcoal/50">
                   <span className="mt-0.5 text-red-400">{item.icon}</span>
@@ -67,10 +67,10 @@ const ProblemSection: React.FC = () => {
             
             <div className="space-y-6">
               {[
-                { text: "Centralized Trust Evidence Hub", sub: "Policies, DPAs, and SOC2 in one vault" },
-                { text: "Reuse Approved Answers", sub: "Collaborate once, answer everywhere" },
-                { text: "Buyer-Ready Trust Packs", sub: "Everything buyers expect, ready to share" },
-                { text: "AI-Powered Governance Summaries", sub: "Instant clarity on data use and models" },
+                { text: "Automated Trust Center", sub: "A public or gated page to show your security posture" },
+                { text: "Compliance Evidence Hub", sub: "Centralize policies and audit artifacts for ISO & SOC2" },
+                { text: "Due Diligence Workspace", sub: "Accelerate customer reviews with a unified truth" },
+                { text: "Assistive Compliance AI", sub: "AI helps organize evidence and accelerate workflows" },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <span className="mt-1 text-lime"><CheckCircle size={14} /></span>

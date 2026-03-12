@@ -1,35 +1,35 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Building2, Cpu, ShieldCheck } from 'lucide-react';
+import { Building2, ShieldCheck } from 'lucide-react';
 
 const audienceCards = [
   {
     icon: <Building2 className="text-black" />,
-    title: "B2B SaaS Teams",
-    desc: "Speed up enterprise procurement by centralizing trust evidence and responding to questionnaires in hours, not weeks.",
-    benefits: ["Centralized Evidence", "Reuse Approved Answers", "Audit-Ready Logs"]
-  },
-  {
-    icon: <Cpu className="text-black" />,
-    title: "AI Startups",
-    desc: "Built-in AI governance disclosures help you answer the tough questions about data use and human oversight from the start.",
-    benefits: ["AI Model Disclosure", "Data Use Transparency", "Governance Ready"]
+    title: "SaaS Startups",
+    desc: "Speed up enterprise procurement by centralizing trust evidence and launching a professional Trust Center in minutes.",
+    benefits: ["Enterprise Ready", "Sales Acceleration", "Trust Infrastructure"]
   },
   {
     icon: <ShieldCheck className="text-black" />,
-    title: "Trust-Sensitive Products",
-    desc: "For Fintech, Healthtech, and HRtech teams selling into regulated buyers who demand deep privacy proof.",
-    benefits: ["DPA Documentation", "Subprocessor Register", "GDPR/HIPAA Controls"]
+    title: "Regulated Vendors",
+    desc: "Built for Fintech, Healthtech, and HRtech teams who face deep security scrutiny from regulated enterprise buyers.",
+    benefits: ["GDPR/HIPAA Ready", "Subprocessor Transparency", "Audit Records"]
+  },
+  {
+    icon: <ShieldCheck className="text-black" />,
+    title: "Audit Candidates",
+    desc: "Perfect for companies preparing for SOC 2 or ISO 27001 who need to centralize their evidence and policy governance.",
+    benefits: ["SOC 2 Prep", "ISO 27001 Readiness", "Evidence Repository"]
   }
 ];
 
 const Audience: React.FC = () => {
   return (
-    <section id="agencies" className="section-padding bg-black text-white relative overflow-hidden">
+    <section id="audience" className="section-padding bg-black text-white relative overflow-hidden">
       <div className="container relative z-10">
         <div className="max-w-3xl mb-20 text-left">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-white">Built for teams under <span className="text-lime">real buyer scrutiny</span></h2>
-          <p className="text-lg text-white/50">RegulaTrust scales with your organization as you move from early deals to major enterprise contracts.</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-white">Who <span className="text-lime">RegulaTrust</span> is for</h2>
+          <p className="text-lg text-white/50">Purpose-built for organizations that need to prove their security, privacy, and compliance posture to win.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

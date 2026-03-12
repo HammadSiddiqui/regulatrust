@@ -1,28 +1,28 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Database, MessageSquare, ClipboardCheck, ArrowUpRight, Zap, Target } from 'lucide-react';
+import { Database, Globe, ClipboardCheck, ArrowUpRight, Zap, Target } from 'lucide-react';
 
 const strategicPillars = [
   { 
-    id: 'evidence', 
-    title: 'Trust Evidence Hub', 
+    id: 'center', 
+    title: 'Trust Center', 
+    icon: <Globe size={20} />, 
+    description: 'Launch a professional, customer-facing portal to showcase your live trust posture.',
+    points: ['Public or gated access', 'Security overview pages', 'Subprocessor registry', 'Privacy transparency hub']
+  },
+  { 
+    id: 'workspace', 
+    title: 'Compliance Workspace', 
     icon: <Database size={20} />, 
-    description: 'Keep policies, subprocessors, DPAs, and AI-use disclosures in one centralized vault.',
-    points: ['Version-controlled policies', 'Live subprocessor register', 'Data retention records', 'AI governance statements']
+    description: 'Centralize policies, controls, and evidence for ISO 27001, SOC 2, and GDPR.',
+    points: ['Evidence repository', 'Policy management', 'Review workflows', 'Expiry reminders']
   },
   { 
-    id: 'copilot', 
-    title: 'Questionnaire Copilot', 
-    icon: <MessageSquare size={20} />, 
-    description: 'Answer buyer privacy and security reviews faster using pre-approved evidence.',
-    points: ['Approved answer library', 'Collaborative review cycle', 'Evidence mapping', 'Audit-ready responses']
-  },
-  { 
-    id: 'ops', 
-    title: 'Privacy Ops Workspace', 
+    id: 'due-diligence', 
+    title: 'Due Diligence Hub', 
     icon: <ClipboardCheck size={20} />, 
-    description: 'Run lightweight privacy operations without spreadsheets or bloated GRC software.',
-    points: ['Privacy request queue', 'Assessment workflows', 'Internal approval trail', 'Continuous monitoring']
+    description: 'Accelerate enterprise procurement by securely sharing compliance documentation.',
+    points: ['Controlled document sharing', 'Review & approval tracks', 'Audit-ready documentation', 'Deal acceleration metrics']
   },
 ];
 

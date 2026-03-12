@@ -2,9 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const reasons = [
-  { title: "Rising Expectations", desc: "Users are more privacy-aware than ever. Transparent compliance builds defensive brand equity." },
-  { title: "Standard of Care", desc: "Small teams are now expected to meet the same compliance standards as global enterprises." },
-  { title: "Efficiency Gap", desc: "Manual compliance wastes hundreds of hours. Automation is the only way to scale safely." },
+  { title: "Shorten Review Cycles", desc: "Consolidate trust evidence to move through enterprise security reviews in days, not weeks." },
+  { title: "Scale Compliance", desc: "Centralize your artifacts for SOC 2 and ISO 27001 without manual spreadsheet tracking." },
+  { title: "Win Enterprise Trust", desc: "Present a professional, live trust center that gives buyers confidence before they even ask." },
 ];
 
 const WhyNow: React.FC = () => {
@@ -18,10 +18,10 @@ const WhyNow: React.FC = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-6xl font-black mb-8 leading-none tracking-tighter text-white">
-              Privacy compliance is <span className="text-lime">no longer optional.</span>
+              Why teams adopt <span className="text-lime">RegulaTrust</span>
             </h2>
             <p className="text-xl text-white/50 mb-12 max-w-lg">
-              The regulatory landscape is shifting. Don't let compliance be the bottleneck that slows down your next big deployment.
+              Turn security and privacy into a competitive advantage by centralizing compliance artifacts and improving buyer confidence.
             </p>
             <div className="flex gap-4">
               <div className="w-16 h-[2px] bg-lime mt-4"></div>

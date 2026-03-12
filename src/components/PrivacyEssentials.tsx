@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 import { Shield, FileText, Globe, Search, ArrowRight } from 'lucide-react';
 
 const supportingFeatures = [
-  { icon: <Shield size={24} />, title: "Cookie Consent", desc: "Premium, brand-aligned consent banners with granular tracking control." },
-  { icon: <FileText size={24} />, title: "Policy Generation", desc: "AI-powered creation of dynamic privacy policies and terms of service." },
-  { icon: <Search size={24} />, title: "Cookie Scanning", desc: "Automated detection and categorization of active trackers and pixels." },
-  { icon: <Globe size={24} />, title: "DSAR Intake", desc: "Unified workflow for handling data subject access and deletion requests." },
+  { icon: <Shield size={24} />, title: "Evidence Library", desc: "Centralize and govern audit evidence blocks for ISO 27001, SOC 2, and GDPR." },
+  { icon: <FileText size={24} />, title: "Policy Management", desc: "Manage, track, and approve your security and privacy policies in one place." },
+  { icon: <Search size={24} />, title: "Subprocessor Registry", desc: "Maintain a live, transparent list of vendors and their security posture." },
+  { icon: <Globe size={24} />, title: "Assurance Sharing", desc: "Securely share audit reports and compliance packs with gated access controls." },
 ];
 
 const PrivacyEssentials: React.FC = () => {
@@ -15,8 +15,8 @@ const PrivacyEssentials: React.FC = () => {
       <div className="container">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl text-left">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight text-charcoal">Also includes <span className="text-charcoal/40">privacy essentials</span></h2>
-            <p className="text-base text-charcoal/60 leading-relaxed">Everything you need to maintain standard compliance on your primary marketing and product interfaces.</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight text-charcoal">Built for teams pursuing <span className="text-charcoal/40">GDPR, ISO 27001, and SOC 2</span></h2>
+            <p className="text-base text-charcoal/60 leading-relaxed">RegulaTrust helps organizations become audit-ready and stay evidence-ready without the manual overhead.</p>
           </div>
           <button className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-charcoal hover:text-lime transition-colors">
             Explore All Features
