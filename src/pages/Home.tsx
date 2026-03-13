@@ -11,6 +11,7 @@ import Pricing from '../components/Pricing';
 import WhyNow from '../components/WhyNow';
 import FAQ from '../components/FAQ';
 import PrivacyEssentials from '../components/PrivacyEssentials';
+import ReadinessSection from '../components/ReadinessSection';
 import FinalCTA from '../components/FinalCTA';
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
       <ProblemSection />
       <HowItWorks />
       <Features />
+      <ReadinessSection />
       <Audience />
       <WhyNow />
       <PrivacyEssentials />
