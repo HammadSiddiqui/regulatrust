@@ -64,8 +64,8 @@ const ReadinessSection: React.FC = () => {
             viewport={{ once: true }}
             className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-lime/10 text-lime text-[10px] font-black uppercase tracking-[0.2em] mb-6 border border-lime/20"
           >
-            <Zap size={10} />
-            New Product Add-on
+            <Shield size={10} />
+            The Operating Layer
           </motion.div>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -74,8 +74,8 @@ const ReadinessSection: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-6xl font-bold mb-8 tracking-tighter text-white leading-[0.9]"
           >
-            Go beyond the trust center. <br />
-            <span className="text-white/40">Track readiness. Prove trust.</span>
+            The workspace behind <br />
+            <span className="text-white/40">buyer-ready trust.</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -84,7 +84,7 @@ const ReadinessSection: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-lg md:text-xl text-white/60 max-w-2xl leading-relaxed"
           >
-            RegulaTrust helps your team manage ISO 27001 and GDPR readiness behind the scenes, map evidence to requirements, surface gaps, and publish buyer-safe trust signals from one place.
+            Trust isn't static—it's operations. RegulaTrust provides the internal workspace where teams track ISO 27001 and GDPR readiness, manage evidence, and approve what flows to the trust center.
           </motion.p>
         </div>
 

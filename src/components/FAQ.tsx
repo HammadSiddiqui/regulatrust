@@ -4,27 +4,31 @@ import { Plus, Minus } from 'lucide-react';
 const faqs = [
   {
     question: "What is RegulaTrust?",
-    answer: "RegulaTrust is a Trust Center and Compliance Workspace designed to help organizations prove their security, privacy, and compliance posture to win enterprise deals."
+    answer: "RegulaTrust is an internal readiness and external trust platform. It helps organizations manage ISO 27001 and GDPR readiness internally and publish approved trust signals to a buyer-facing Trust Center."
   },
   {
-    question: "How is RegulaTrust different from GRC tools like Vanta or Drata?",
-    answer: "Most GRC tools focus on 'Internal GRC'—getting you audit-ready for SOC 2 or ISO 27001. RegulaTrust focuses on 'External Trust Operations'—the process of centralizing evidence and managing customer due diligence reviews."
+    question: "How is it different from GRC tools like Vanta or Drata?",
+    answer: "RegulaTrust is focused on the evidence, readiness, and trust-publishing workflow rather than sprawling all-in-one automation. We bridge the gap between internal compliance operations and the external buyer experience, providing a lighter but more structured path for companies handling frequent security reviews."
   },
   {
-    question: "Do I need an existing certification (like SOC 2) to use this?",
-    answer: "No. RegulaTrust helps you arrive at 'audit-readiness' by providing the infrastructure to manage your policies and evidence from day one, whether you're pursuing a certification now or later."
-  },
-  {
-    question: "How does the Trust Center work?",
-    answer: "Your Trust Center can be public or password-protected. it allows you to showcase your security overview, subprocessor lists, and policies in a professional, live portal that buyers can trust."
-  },
-  {
-    question: "Does RegulaTrust replace my security questionnaire responses?",
-    answer: "RegulaTrust provides a 'Due Diligence Hub' where you can centralize pre-approved evidence and share 'Trust Packs' with buyers, reducing the repetitive work of answering identical procurement questions."
+    question: "Do I need an existing certification to use it?",
+    answer: "No. You can start using RegulaTrust from day one to keep your policies and evidence organized. It helps you build a solid foundation of 'audit readiness' whether you are pursuing a formal certification now or in the future."
   },
   {
     question: "Does RegulaTrust make my company GDPR compliant?",
-    answer: "No. RegulaTrust does not make your company GDPR compliant or replace legal or compliance programs. Achieving compliance requires internal policies, processes, and controls within your organization. RegulaTrust helps you share and demonstrate evidence of your existing compliance posture by publishing documents such as privacy policies, certifications, subprocessors, and security materials in a Trust Center so customers and partners can review them easily."
+    answer: "No. RegulaTrust supports readiness tracking, evidence organization, and trust publishing. Achieving compliance requires internal policies, processes, and legal oversight. We help you showcase evidence of your existing compliance posture so customers and partners can review it professionally."
+  },
+  {
+    question: "What does the Readiness workspace include?",
+    answer: "The Readiness workspace is a private dashboard where teams track ISO 27001:2022 and GDPR requirements. It includes evidence mapping tools, gap assessments, and internal review workflows to ensure only buyer-safe information is published externally."
+  },
+  {
+    question: "How does the Trust Center work?",
+    answer: "Your Trust Center is the external 'surface' of your readiness workspace. Once evidence is approved internally, you can push it to your Trust Center (public or gated) to share policies, FAQs, subprocessors, and security proofs with buyers professionally."
+  },
+  {
+    question: "Does it replace security questionnaires?",
+    answer: "By centralizing approved evidence and sharing a professional 'Trust Pack' via your portal, you can reduce the repetitive manual work of answering identical security questionnaire requests and shorten procurement cycles."
   }
 ];
 

@@ -67,10 +67,10 @@ const ProblemSection: React.FC = () => {
             
             <div className="space-y-6">
               {[
-                { text: "Automated Trust Center", sub: "A public or gated page to show your security posture" },
-                { text: "Compliance Evidence Hub", sub: "Centralize policies and audit artifacts for ISO & SOC2" },
-                { text: "Due Diligence Workspace", sub: "Accelerate customer reviews with a unified truth" },
-                { text: "Assistive Compliance AI", sub: "AI helps organize evidence and accelerate workflows" },
+                { text: "Readiness Workspace", sub: "The internal layer to track ISO 27001 and GDPR requirements" },
+                { text: "Centralized Evidence Hub", sub: "Map policies, logs, and records to requirement frameworks" },
+                { text: "Trust Publishing Bridge", sub: "Approve internal work and push to your external portal" },
+                { text: "Buyer-Facing Trust Center", sub: "Share pre-approved proof professionally with customers" },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <span className="mt-1 text-lime"><CheckCircle size={14} /></span>

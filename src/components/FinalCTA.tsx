@@ -17,11 +17,11 @@ const FinalCTA: React.FC = () => {
         </motion.div>
         
         <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight text-white max-w-3xl leading-tight">
-          Launch your company’s <span className="text-lime">Trust Center</span>
+          Track readiness. <span className="text-lime">Publish trust.</span>
         </h2>
         
         <p className="text-lg md:text-xl text-white/50 mb-12 max-w-2xl leading-relaxed">
-          RegulaTrust helps you present your security and compliance posture clearly, professionally, and securely.
+          The internal workspace for ISO 27001 and GDPR operations, bridged to a professional Trust Center.
         </p>
         
         <div className="w-full max-w-md mx-auto">
@@ -30,7 +30,7 @@ const FinalCTA: React.FC = () => {
         
         <div className="mt-16 flex items-center gap-6 opacity-30 grayscale pointer-events-none">
            <Zap size={24} className="text-lime" />
-            <span className="text-[10px] font-black uppercase tracking-[0.5em] text-white">Trust Center and Compliance Workspace</span>
+            <span className="text-[10px] font-black uppercase tracking-[0.5em] text-white">Internal Readiness Workspace to External Trust Portal</span>
            <Zap size={24} className="text-lime" />
         </div>
       </div>

@@ -4,57 +4,56 @@ import { Check, Target } from 'lucide-react';
 
 const plans = [
   {
-    name: "Starter",
-    tagline: "Launch your first Trust Center.",
+    name: "Trust Edition",
+    tagline: "Build a professional Trust Center.",
     price: "£79",
-    desc: "For early-stage SaaS companies that want to present a credible security and privacy posture to customers.",
+    desc: "For companies that want to centralize security docs and prove trust to customers instantly.",
     features: [
-      "Public Trust Center page",
-      "Security & privacy overview pages",
-      "Subprocessor registry",
-      "Basic document hosting",
-      "Compliance framework alignment pages",
-      "Contact form for security inquiries",
+      "Public Trust Center portal",
+      "Framework alignment pages",
+      "Live subprocessor registry",
+      "Public document hosting",
+      "Privacy & security FAQs",
+      "Security inquiry routing",
       "Standard support"
     ],
     cta: "Start Building Trust",
     highlight: false
   },
   {
-    name: "Growth",
-    tagline: "Pass due diligence faster.",
+    name: "Readiness Edition",
+    tagline: "Track readiness. Prove trust.",
     price: "£249",
-    desc: "For growing SaaS teams managing customer security reviews and compliance documentation.",
+    desc: "The operating layer for teams managing internal ISO 27001 and GDPR readiness workflows.",
     features: [
-      "Everything in Starter, plus:",
+      "Everything in Trust, plus:",
+      "Internal Readiness workspace",
+      "Framework-specific tracking",
+      "Evidence mapping & versioning",
+      "Gap identification engine",
+      "Internal approval workflows",
       "Gated document sharing",
-      "Security package request workflows",
-      "Due diligence workspace",
-      "Document approval workflows",
-      "Evidence repository",
-      "Policy & compliance document management",
-      "Expiry and review reminders",
-      "Activity logging",
-      "Multiple admins"
+      "NDA click-throughs",
+      "Activity logging"
     ],
     cta: "Start Free Trial",
     highlight: true
   },
   {
-    name: "Scale",
-    tagline: "Operationalize trust across your organization.",
+    name: "Platform Edition",
+    tagline: "Full readiness-to-trust operations.",
     price: "£599",
-    desc: "For companies selling to enterprise customers and handling frequent security reviews.",
+    desc: "For organizations scaling compliance across multiple frameworks and teams.",
     features: [
-      "Everything in Growth, plus:",
-      "Custom domain Trust Center",
+      "Everything in Readiness, plus:",
+      "Publishing Bridge (Internal-to-External)",
+      "Bulk evidence mapping",
+      "Cross-framework artifact linking",
       "Advanced access controls",
-      "Customer-specific document sharing",
-      "Advanced audit logs",
-      "Compliance framework mapping",
+      "Custom domain support",
       "Trust Center customization",
-      "Priority support",
-      "Integration support"
+      "Review cycle automation",
+      "Priority support"
     ],
     cta: "Book a Demo",
     highlight: false
@@ -66,12 +65,12 @@ const plans = [
     desc: "For organizations with complex compliance, security, and governance requirements.",
     features: [
       "SSO / SAML authentication",
-      "SCIM provisioning",
-      "Advanced permission management",
-      "Multi-team governance workflows",
+      "SCIM user provisioning",
+      "Multi-team governance",
+      "Role-based permission sets",
+      "Advanced audit reporting",
       "Implementation support",
-      "Custom integrations",
-      "Dedicated support"
+      "Dedicated account manager"
     ],
     cta: "Contact Sales",
     highlight: false

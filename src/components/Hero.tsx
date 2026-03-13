@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="inline-block px-4 py-1.5 mb-6 text-xs font-bold uppercase tracking-widest bg-black text-lime rounded-full border border-lime/20"
           >
-            Trust Center and Compliance Workspace
+            The Operating Layer for Enterprise Trust
           </motion.div>
           
           <motion.h1 
@@ -30,7 +30,8 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-5xl md:text-7xl font-bold mb-6 tracking-tight"
           >
-            Build a <span className="bg-black text-lime px-3 py-1 rounded-lg inline-block">Trust Center</span> for your company
+            Track <span className="bg-black text-lime px-3 py-1 rounded-lg inline-block">readiness.</span> <br />
+            Publish trust.
           </motion.h1>
           
           <motion.p 
@@ -39,17 +40,25 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-charcoal/70 mb-10 max-w-2xl"
           >
-            Share your security, privacy, and compliance posture with customers — without endless questionnaires.
-            <span className="block mt-4 text-sm font-medium text-charcoal/50">RegulaTrust helps companies publish a modern Trust Center where customers can review policies, certifications, subprocessors, and security documentation in one secure place.</span>
+            RegulaTrust gives teams a private readiness workspace for ISO 27001 and GDPR, 
+            plus a buyer-facing Trust Center to share approved security and compliance proof professionally.
+            <span className="block mt-4 text-sm font-medium text-charcoal/50 italic border-l-4 border-lime pl-4">
+              Internal readiness workspace → approved evidence → buyer-facing trust center.
+            </span>
           </motion.p>
           
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="w-full flex justify-center"
+            className="w-full flex flex-col sm:flex-row justify-center gap-4"
           >
-            <WaitlistForm />
+            <div className="flex-1 max-w-sm">
+              <WaitlistForm />
+            </div>
+            <button className="h-16 px-8 border-2 border-charcoal/10 rounded-2xl flex items-center justify-center text-xs font-black uppercase tracking-[0.2em] hover:bg-black hover:text-white transition-all whitespace-nowrap">
+              Preview Workspace
+            </button>
           </motion.div>
         </div>
 
@@ -65,7 +74,7 @@ const Hero: React.FC = () => {
                   className="flex flex-col items-center gap-4 p-6 bg-white border border-grey rounded-lg shadow-sm w-full sm:w-40 md:flex-1 hover:border-lime transition-colors group"
                 >
                   <div className="p-3 rounded-full bg-off-white group-hover:bg-lime transition-colors">
-                    {React.cloneElement(step.icon as React.ReactElement<any>, { className: "text-black" })}
+                    {React.cloneElement(step.icon as React.ReactElement<{ className?: string }>, { className: "text-black" })}
                   </div>
                   <span className="text-xs font-bold uppercase tracking-wider text-charcoal/60 group-hover:text-black">{step.label}</span>
                 </motion.div>

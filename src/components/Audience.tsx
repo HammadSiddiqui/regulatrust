@@ -5,20 +5,20 @@ import { Building2, ShieldCheck, Target } from 'lucide-react';
 const audienceCards = [
   {
     icon: <Building2 className="text-black" />,
-    title: "SaaS Companies",
-    desc: "Speed up enterprise procurement by launching a professional Trust Center where customers can review your security posture in minutes.",
+    title: "SaaS Sales & Security",
+    desc: "Move from internal readiness to external trust. Shorten enterprise procurement cycles by presenting approved security proof in one professional home.",
     benefits: ["SaaS Leaders", "Sales Velocity", "Security Transparency"]
   },
   {
     icon: <ShieldCheck className="text-black" />,
-    title: "Security & Compliance",
-    desc: "Built for teams who manage SOC 2, ISO 27001, or GDPR and need a centralized place to present evidence to external auditors and customers.",
-    benefits: ["CTOs & Engineering", "Compliance Teams", "Audit Readiness"]
+    title: "Readiness Teams",
+    desc: "The workspace for ISO 27001 and GDPR operations. Track requirements, map evidence, and approve what is safe to publish to your Trust Center.",
+    benefits: ["Compliance Hub", "Evidence Management", "Audit Readiness"]
   },
   {
     icon: <Target className="text-black" />,
     title: "Enterprise Vendors",
-    desc: "Perfect for startups selling to large enterprises who regularly receive deep security questionnaires and documentation requests.",
+    desc: "Stop responding to repetitive security questionnaires. Organize your trust posture internally and prove it externally with gated, secure access.",
     benefits: ["Enterprise Ready", "Vendor Risk Hub", "Customer Trust"]
   }
 ];

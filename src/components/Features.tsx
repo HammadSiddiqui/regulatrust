@@ -1,28 +1,28 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Database, Globe, ClipboardCheck, ArrowUpRight, Zap, Target, Shield } from 'lucide-react';
+import { Database, ClipboardCheck, ArrowUpRight, Zap, Target, Shield } from 'lucide-react';
 
 const strategicPillars = [
   { 
-    id: 'documentation', 
-    title: 'Security & Privacy', 
-    icon: <Globe size={20} />, 
-    description: 'Centralize all the security and privacy documentation your customers expect in one professional home.',
-    points: ['Security policies', 'Privacy documentation', 'Compliance certifications', 'GDPR & SOC 2 artifacts']
+    id: 'readiness', 
+    title: 'Readiness Ops', 
+    icon: <Shield size={20} />, 
+    description: 'The internal workspace where your team manages readiness, maps evidence, and prepares for audits.',
+    points: ['ISO 27001 readiness', 'GDPR maturity tracking', 'Evidence mapping', 'Gap identification']
   },
   { 
     id: 'records', 
     title: 'Trust Records', 
     icon: <Database size={20} />, 
     description: 'Maintain live registries of your subprocessors and security FAQs to demonstrate ongoing maturity.',
-    points: ['Subprocessor lists', 'Security FAQs', 'Vendor risk records', 'Audit evidence']
+    points: ['Live subprocessor list', 'Security & Privacy FAQs', 'Vendor risk records', 'Audit breadcrumbs']
   },
   { 
     id: 'sharing', 
     title: 'Secure Sharing', 
     icon: <ClipboardCheck size={20} />, 
-    description: 'Control how your most sensitive documents are shared with customers and prospects.',
-    points: ['Gated document access', 'NDA click-throughs', 'Access approval workflows', 'Secure download logs']
+    description: 'Professional external interface to share approved trust signals and gated documents with buyers.',
+    points: ['Gated document access', 'NDA workflows', 'Buyer download logs', 'Review cycle tracking']
   },
 ];
 
