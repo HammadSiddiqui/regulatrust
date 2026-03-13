@@ -12,6 +12,7 @@ import WhyNow from '../components/WhyNow';
 import FAQ from '../components/FAQ';
 import PrivacyEssentials from '../components/PrivacyEssentials';
 import ReadinessSection from '../components/ReadinessSection';
+import InternalWorkspaceMockup from '../components/InternalWorkspaceMockup';
 import FinalCTA from '../components/FinalCTA';
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       <HowItWorks />
       <ReadinessSection />
       <TrustMockup />
+      <InternalWorkspaceMockup />
       <ComparisonSection />
       <TrustStrip />
       <ProblemSection />
