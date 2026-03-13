@@ -19,13 +19,13 @@ export default function Home() {
     <>
       <AnnouncementBar />
       <Hero />
+      <HowItWorks />
+      <ReadinessSection />
       <TrustMockup />
       <ComparisonSection />
       <TrustStrip />
       <ProblemSection />
-      <HowItWorks />
       <Features />
-      <ReadinessSection />
       <Audience />
       <WhyNow />
       <PrivacyEssentials />
