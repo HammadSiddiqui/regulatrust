@@ -6,7 +6,8 @@ const plans = [
   {
     name: "Trust Edition",
     tagline: "Build a professional Trust Center.",
-    price: "£79",
+    price: "£39",
+    originalPrice: "£79",
     desc: "For companies that want to centralize security docs and prove trust to customers instantly.",
     features: [
       "Public Trust Center portal",
@@ -23,7 +24,8 @@ const plans = [
   {
     name: "Readiness Edition",
     tagline: "Track readiness. Prove trust.",
-    price: "£249",
+    price: "£124",
+    originalPrice: "£249",
     desc: "The operating layer for teams managing internal ISO 27001 and GDPR readiness workflows.",
     features: [
       "Everything in Trust, plus:",
@@ -42,7 +44,8 @@ const plans = [
   {
     name: "Platform Edition",
     tagline: "Full readiness-to-trust operations.",
-    price: "£599",
+    price: "£299",
+    originalPrice: "£599",
     desc: "For organizations scaling compliance across multiple frameworks and teams.",
     features: [
       "Everything in Readiness, plus:",
@@ -107,11 +110,21 @@ const Pricing: React.FC = () => {
               )}
               <div className="mb-8">
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-xl font-bold">{plan.name}</h3>
+                  <h3 className={`text-xl font-bold ${plan.highlight ? 'text-white' : 'text-charcoal'}`}>{plan.name}</h3>
                 </div>
                 <div className="mb-4">
-                  <span className="text-4xl font-black">{plan.price}</span>
-                  {plan.price !== 'Custom' && <span className={`text-sm ml-1 ${plan.highlight ? 'text-white/40' : 'text-charcoal/40'}`}>/ month</span>}
+                  <div className="flex items-baseline gap-2">
+                    {plan.originalPrice && (
+                      <span className={`text-xl line-through opacity-40 ${plan.highlight ? 'text-white' : 'text-charcoal'}`}>
+                        {plan.originalPrice}
+                      </span>
+                    )}
+                    <span className="text-4xl font-black">{plan.price}</span>
+                    {plan.price !== 'Custom' && (
+                       <span className={`${plan.highlight ? 'text-lime' : 'text-black'} font-black ml-1`}>*</span>
+                    )}
+                  </div>
+                  {plan.price !== 'Custom' && <span className={`text-sm ${plan.highlight ? 'text-white/40' : 'text-charcoal/40'}`}>/ month</span>}
                 </div>
                 <p className={`text-[10px] font-black uppercase tracking-widest mb-3 ${plan.highlight ? 'text-lime' : 'text-charcoal'}`}>{plan.tagline}</p>
                 <p className={`text-xs leading-relaxed ${plan.highlight ? 'text-white/60' : 'text-charcoal/50'}`}>{plan.desc}</p>
@@ -137,6 +150,10 @@ const Pricing: React.FC = () => {
               </button>
             </motion.div>
           ))}
+        </div>
+
+        <div className="mt-12 text-center text-xs font-black uppercase tracking-[0.2em] text-charcoal/40">
+          * Early access: Join the RegulaTrust waitlist and lock in 50% off for life
         </div>
         
         <div className="mt-32 max-w-4xl mx-auto">

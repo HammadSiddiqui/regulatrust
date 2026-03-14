@@ -116,7 +116,8 @@ const ComparisonSection: React.FC = () => {
               </div>
 
               <div className="flex items-center gap-3 text-xs font-bold text-lime uppercase tracking-widest pl-2">
-                <Layout size={14} /> One central structured home
+                <Layout size={14} /> 
+                <span className="bg-black px-2 py-0.5 rounded text-lime">One central structured home</span>
               </div>
             </div>
           </motion.div>

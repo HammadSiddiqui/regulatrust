@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Shield, FileText, Globe, Search, ArrowRight } from 'lucide-react';
+import { Shield, FileText, Globe, Search } from 'lucide-react';
 
 const supportingFeatures = [
   { icon: <Shield size={24} />, title: "SOC 2 & ISO 27001", desc: "Organize and present your security certifications and audit reports effectively." },
@@ -18,10 +18,6 @@ const PrivacyEssentials: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight text-charcoal">Support global <span className="text-charcoal/40">privacy and compliance standards</span></h2>
             <p className="text-base text-charcoal/60 leading-relaxed">RegulaTrust helps you organize and present your compliance information clearly through a modern Trust Center, making security reviews seamless for your customers.</p>
           </div>
-          <button className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-charcoal hover:text-lime transition-colors">
-            Explore All Features
-            <ArrowRight size={16} />
-          </button>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-left">

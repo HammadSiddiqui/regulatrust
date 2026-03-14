@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import AnnouncementBar from './components/AnnouncementBar';
 import CookieConsent from './components/CookieConsent';
 import Home from './pages/Home';
 import WhatIsTrustCenter from './pages/resources/WhatIsTrustCenter';
@@ -18,6 +19,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col">
+        <AnnouncementBar />
         <Navbar />
         <main className="flex-1">
           <Routes>

@@ -195,23 +195,25 @@ const ReadinessSection: React.FC = () => {
                 <div className="p-8 bg-white/5 border border-white/5 rounded-[2.5rem] flex flex-col justify-between">
                   <div>
                     <h5 className="text-[10px] font-black uppercase tracking-widest text-white/30 mb-8 font-bold">Latest Evidence</h5>
-                    <div className="space-y-3">
-                       {[
-                         { name: "Information Security Policy", status: "Approved" },
-                         { name: "Network Diagram", status: "Review Required" },
-                         { name: "Access Control Doc", status: "Approved" },
-                       ].map((item, i) => (
-                         <div key={i} className="flex items-center justify-between p-4 bg-white/5 rounded-2xl border border-white/5 hover:bg-white/10 transition-colors">
-                            <div className="flex items-center gap-3">
-                               <FileText size={16} className="text-lime" />
-                               <span className="text-[11px] font-bold text-white">{item.name}</span>
-                            </div>
-                            <span className={`text-[9px] font-black uppercase tracking-widest ${item.status === 'Approved' ? 'text-lime' : 'text-white/20'}`}>
-                               {item.status}
-                            </span>
-                         </div>
-                       ))}
-                    </div>
+                     <div className="space-y-3">
+                        {[
+                          { name: "Information Security Policy V2.2", status: "Approved" },
+                          { name: "AWS Cloud Architecture Diagram", status: "Approved" },
+                          { name: "Quarterly Risk Assessment 2024", status: "Review Required" },
+                          { name: "Employee Onboarding Checklist", status: "Approved" },
+                          { name: "DPA - Google Cloud Platform", status: "Approved" },
+                        ].map((item, i) => (
+                          <div key={i} className="flex items-center justify-between p-4 bg-white/5 rounded-2xl border border-white/5 hover:bg-white/10 transition-colors">
+                             <div className="flex items-center gap-3">
+                                <FileText size={16} className="text-lime" />
+                                <span className="text-[11px] font-bold text-white">{item.name}</span>
+                             </div>
+                             <span className={`text-[9px] font-black uppercase tracking-widest ${item.status === 'Approved' ? 'text-lime' : 'text-white/20'}`}>
+                                {item.status}
+                             </span>
+                          </div>
+                        ))}
+                     </div>
                   </div>
                   
                   <div className="mt-8 p-6 bg-lime rounded-3xl text-black">
@@ -327,9 +329,6 @@ const ReadinessSection: React.FC = () => {
                  <div className="flex flex-col sm:flex-row justify-center gap-4">
                     <button className="h-16 px-8 bg-black text-lime rounded-2xl flex items-center justify-center gap-3 text-xs font-black uppercase tracking-[0.2em] hover:scale-105 transition-transform">
                        Join the Waitlist <ArrowUpRight size={18} />
-                    </button>
-                    <button className="h-16 px-8 border-2 border-black/10 text-black rounded-2xl flex items-center justify-center text-xs font-black uppercase tracking-[0.2em] hover:bg-black/5 transition-colors">
-                       Preview Workspace
                     </button>
                  </div>
               </div>
