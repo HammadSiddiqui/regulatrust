@@ -39,31 +39,31 @@ const TrustMockup: React.FC = () => {
           className="relative max-w-5xl mx-auto"
         >
           {/* Main Portal Container */}
-          <div className="bg-off-white rounded-3xl border border-grey shadow-2xl overflow-hidden flex flex-col md:flex-row min-h-[600px] md:h-[600px]">
+          <div className="bg-off-white rounded-3xl border border-grey shadow-2xl overflow-hidden flex flex-col md:flex-row min-h-[500px] md:h-[600px]">
             
             {/* Sidebar */}
-            <div className="w-full md:w-64 bg-white border-r border-grey p-6 flex flex-col shrink-0">
-              <div className="flex items-center gap-3 mb-10">
+            <div className="w-full md:w-64 bg-white border-b md:border-b-0 md:border-r border-grey p-5 md:p-6 flex flex-col shrink-0">
+              <div className="flex items-center gap-3 mb-6 md:mb-10">
                 <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
                   <Shield size={18} className="text-lime" />
                 </div>
                 <span className="font-bold tracking-tight">Trust Portal</span>
               </div>
               
-              <nav className="space-y-1 flex-1">
+              <nav className="space-y-1 flex-1 grid grid-cols-2 md:grid-cols-1 gap-1 md:gap-1">
                 {sections.map((section, i) => (
                   <div 
                     key={i} 
-                    className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-bold transition-colors cursor-pointer
+                    className={`flex items-center gap-3 px-3 md:px-4 py-2.5 md:py-3 rounded-xl text-xs md:text-sm font-bold transition-colors cursor-pointer
                       ${i === 0 ? 'bg-lime text-black' : 'text-charcoal/40 hover:bg-off-white hover:text-black'}`}
                   >
-                    {section.icon}
-                    {section.label}
+                    <span className="shrink-0">{section.icon}</span>
+                    <span className="truncate">{section.label}</span>
                   </div>
                 ))}
               </nav>
 
-              <div className="mt-8 p-4 bg-black rounded-2xl text-white">
+              <div className="mt-6 md:mt-8 p-4 bg-black rounded-2xl text-white hidden md:block">
                 <div className="flex items-center gap-2 mb-2">
                   <div className="w-2 h-2 bg-lime rounded-full animate-pulse" />
                   <span className="text-[10px] uppercase font-black tracking-widest text-lime">Live Status</span>
@@ -73,30 +73,30 @@ const TrustMockup: React.FC = () => {
             </div>
 
             {/* Content Area */}
-            <div className="flex-1 p-6 md:p-10 overflow-y-auto bg-off-white relative">
-              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 mb-10">
+            <div className="flex-1 p-5 md:p-10 overflow-y-auto bg-off-white relative">
+              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 mb-8 md:mb-10">
                 <div>
-                  <h3 className="text-2xl font-bold mb-1">Security Overview</h3>
-                  <p className="text-sm text-charcoal/40 font-medium">Last updated 2 days ago</p>
+                  <h3 className="text-xl md:text-2xl font-bold mb-1">Security Overview</h3>
+                  <p className="text-xs md:text-sm text-charcoal/40 font-medium">Last updated 2 days ago</p>
                 </div>
                 <div className="flex gap-2">
-                  <div className="px-3 py-1.5 bg-black text-white text-[10px] font-black uppercase tracking-widest rounded-full">SOC 2</div>
-                  <div className="px-3 py-1.5 bg-black text-white text-[10px] font-black uppercase tracking-widest rounded-full">ISO 27001</div>
+                  <div className="px-3 py-1 bg-black text-white text-[9px] md:text-[10px] font-black uppercase tracking-widest rounded-full">SOC 2</div>
+                  <div className="px-3 py-1 bg-black text-white text-[9px] md:text-[10px] font-black uppercase tracking-widest rounded-full">ISO 27001</div>
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
                 {documents.map((doc, i) => (
                   <motion.div 
                     key={i}
                     whileHover={{ scale: 1.02 }}
-                    className="bg-white p-5 rounded-2xl border border-grey shadow-sm hover:border-lime transition-all group cursor-default"
+                    className="bg-white p-4 md:p-5 rounded-2xl border border-grey shadow-sm hover:border-lime transition-all group cursor-default"
                   >
                     <div className="flex justify-between items-start mb-4">
-                      <div className="p-2.5 bg-off-white rounded-xl group-hover:bg-lime transition-colors">
-                        <FileText size={20} />
+                      <div className="p-2 bg-off-white rounded-xl group-hover:bg-lime transition-colors">
+                        <FileText size={18} />
                       </div>
-                      <div className={`px-2 py-1 rounded text-[9px] font-black uppercase tracking-widest
+                      <div className={`px-2 py-0.5 rounded text-[8px] md:text-[9px] font-black uppercase tracking-widest whitespace-nowrap
                         ${doc.type === 'Public' ? 'bg-green-100 text-green-700' : 
                           doc.type === 'Gated' ? 'bg-amber-100 text-amber-700' : 
                           'bg-red-100 text-red-700'}`}
@@ -104,8 +104,8 @@ const TrustMockup: React.FC = () => {
                         {doc.type}
                       </div>
                     </div>
-                    <h4 className="font-bold text-sm mb-2">{doc.title}</h4>
-                    <div className="flex items-center gap-2 text-[10px] font-bold text-charcoal/30 uppercase tracking-widest">
+                    <h4 className="font-bold text-xs md:text-sm mb-2 truncate">{doc.title}</h4>
+                    <div className="flex items-center gap-2 text-[9px] md:text-[10px] font-bold text-charcoal/30 uppercase tracking-widest">
                       {doc.icon}
                       {doc.status}
                     </div>

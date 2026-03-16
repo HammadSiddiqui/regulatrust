@@ -16,24 +16,24 @@ const InternalWorkspaceMockup: React.FC = () => {
           <div className="bg-charcoal rounded-2xl p-4 md:p-8 shadow-2xl border border-white/10 overflow-hidden text-left">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="col-span-1 md:col-span-2 space-y-4">
-                <div className="bg-white/5 rounded-xl p-6 border border-white/5 hover:border-lime/30 transition-colors">
+                <div className="bg-white/5 rounded-xl p-4 md:p-6 border border-white/5 hover:border-lime/30 transition-colors">
                   <div className="flex justify-between items-start mb-4">
-                    <div className="text-white/40 text-[10px] uppercase font-bold tracking-wider">Active Trust Portfolio</div>
-                    <div className="px-2 py-0.5 bg-lime/10 text-lime text-[10px] font-bold uppercase rounded">Published</div>
+                    <div className="text-white/40 text-[9px] md:text-[10px] uppercase font-bold tracking-wider">Active Trust Portfolio</div>
+                    <div className="px-2 py-0.5 bg-lime/10 text-lime text-[8px] md:text-[10px] font-bold uppercase rounded">Published</div>
                   </div>
-                  <div className="space-y-3">
+                  <div className="space-y-2 md:space-y-3">
                     {[
                       { label: "Privacy Policy", status: "Approved" },
                       { label: "Subprocessor Register", status: "Approved" },
                       { label: "Data Processing Agreement", status: "In Review" },
                       { label: "AI Governance Disclosure", status: "Approved" }
                     ].map((doc, i) => (
-                      <div key={i} className="flex items-center justify-between p-3 bg-white/5 rounded-lg border border-white/5">
-                        <div className="flex items-center gap-3">
-                          <FileText size={14} className="text-white/40" />
-                          <span className="text-sm font-medium text-white/80">{doc.label}</span>
+                      <div key={i} className="flex items-center justify-between p-2 md:p-3 bg-white/5 rounded-lg border border-white/5">
+                        <div className="flex items-center gap-2 md:gap-3 overflow-hidden">
+                          <FileText size={12} className="text-white/40 shrink-0" />
+                          <span className="text-xs font-medium text-white/80 truncate leading-tight">{doc.label}</span>
                         </div>
-                        <span className={`text-[10px] font-bold ${doc.status === 'Approved' ? 'text-lime' : 'text-white/30'}`}>{doc.status}</span>
+                        <span className={`text-[8px] md:text-[10px] font-bold shrink-0 ${doc.status === 'Approved' ? 'text-lime' : 'text-white/30'}`}>{doc.status}</span>
                       </div>
                     ))}
                   </div>
@@ -41,8 +41,8 @@ const InternalWorkspaceMockup: React.FC = () => {
               </div>
               
               <div className="space-y-4">
-                <div className="bg-white/5 rounded-xl p-6 border border-white/5 hover:border-lime/30 transition-colors">
-                  <div className="text-white/40 text-[10px] uppercase font-bold mb-4 tracking-wider">Due Diligence Activity</div>
+                <div className="bg-white/5 rounded-xl p-4 md:p-6 border border-white/5 hover:border-lime/30 transition-colors">
+                  <div className="text-white/40 text-[9px] md:text-[10px] uppercase font-bold mb-4 tracking-wider">Due Diligence Activity</div>
                   <div className="space-y-4">
                     {[
                       { org: "Acme Enterprise", type: "Portal Access", time: "2m ago" },
@@ -50,23 +50,23 @@ const InternalWorkspaceMockup: React.FC = () => {
                       { org: "Stripe", type: "Questionnaire", time: "3h ago" },
                     ].map((activity, i) => (
                       <div key={i} className="border-b border-white/5 pb-3 last:border-0 last:pb-0">
-                        <div className="text-xs font-bold text-white">{activity.org}</div>
+                        <div className="text-xs font-bold text-white truncate">{activity.org}</div>
                         <div className="flex justify-between items-center mt-1">
-                          <span className="text-[10px] text-white/40 uppercase font-black">{activity.type}</span>
-                          <span className="text-[10px] text-white/20">{activity.time}</span>
+                          <span className="text-[9px] md:text-[10px] text-white/40 uppercase font-black">{activity.type}</span>
+                          <span className="text-[9px] md:text-[10px] text-white/20 whitespace-nowrap">{activity.time}</span>
                         </div>
                       </div>
                     ))}
                   </div>
                 </div>
 
-                <div className="bg-lime p-6 rounded-xl text-charcoal">
+                <div className="bg-lime p-4 md:p-6 rounded-xl text-charcoal">
                    <div className="flex items-center gap-2 mb-2">
-                     <ShieldCheck size={18} />
-                     <span className="text-[10px] font-bold uppercase tracking-widest">Trust Store Score</span>
+                     <ShieldCheck size={16} />
+                     <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-widest leading-none">Trust Store Score</span>
                    </div>
-                   <div className="text-3xl font-black">98%</div>
-                   <p className="text-[10px] mt-2 font-bold opacity-70">EXCELLENT EVIDENCE READINESS</p>
+                   <div className="text-2xl md:text-3xl font-black">98%</div>
+                   <p className="text-[8px] md:text-[10px] mt-2 font-bold opacity-70 leading-tight">EXCELLENT EVIDENCE READINESS</p>
                 </div>
               </div>
             </div>

@@ -81,16 +81,16 @@ const Footer: React.FC = () => {
           </div>
         </div>
         
-        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-[10px] text-white/20 uppercase font-bold tracking-[0.1em]">
+        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+          <p className="text-[10px] text-white/20 uppercase font-bold tracking-[0.1em] text-center md:text-left">
             © 2026 RegulaTrust. All rights reserved.
           </p>
-          <div className="flex flex-wrap justify-center md:justify-end gap-x-8 gap-y-4 text-[10px] text-white/20 uppercase font-bold tracking-[0.1em]">
-            <Link to="/privacy" className="hover:text-lime">Privacy Policy</Link>
-            <Link to="/cookies" className="hover:text-lime">Cookie Policy</Link>
-            <Link to="/terms" className="hover:text-lime">Terms of Service</Link>
-            <Link to="/dpa" className="hover:text-lime">DPA</Link>
-            <Link to="/acceptable-use" className="hover:text-lime">Acceptable Use</Link>
+          <div className="flex flex-wrap justify-center md:justify-end gap-x-6 sm:gap-x-8 gap-y-3 text-[10px] text-white/20 uppercase font-bold tracking-[0.1em] w-full md:w-auto px-4 md:px-0">
+            <Link to="/privacy" className="hover:text-lime whitespace-nowrap">Privacy Policy</Link>
+            <Link to="/cookies" className="hover:text-lime whitespace-nowrap">Cookie Policy</Link>
+            <Link to="/terms" className="hover:text-lime whitespace-nowrap">Terms of Service</Link>
+            <Link to="/dpa" className="hover:text-lime whitespace-nowrap">DPA</Link>
+            <Link to="/acceptable-use" className="hover:text-lime whitespace-nowrap">Acceptable Use</Link>
           </div>
         </div>
       </div>

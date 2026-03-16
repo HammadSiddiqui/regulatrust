@@ -20,9 +20,9 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-5xl md:text-7xl font-bold mb-6 tracking-tight"
+            className="text-4xl md:text-7xl font-bold mb-6 tracking-tight px-4"
           >
-            Track <span className="bg-black text-lime px-3 py-1 rounded-lg inline-block">readiness.</span> <br />
+            Track <span className="bg-black text-lime px-3 py-1 rounded-lg inline-block">readiness.</span> <br className="hidden sm:block" />
             Publish trust.
           </motion.h1>
           
