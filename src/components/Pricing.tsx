@@ -6,8 +6,8 @@ const plans = [
   {
     name: "Trust Edition",
     tagline: "Build a professional Trust Center.",
-    price: "£39",
-    originalPrice: "£79",
+    price: "$39",
+    originalPrice: "$79",
     desc: "For companies that want to centralize security docs and prove trust to customers instantly.",
     features: [
       "Public Trust Center portal",
@@ -24,8 +24,8 @@ const plans = [
   {
     name: "Readiness Edition",
     tagline: "Track readiness. Prove trust.",
-    price: "£124",
-    originalPrice: "£249",
+    price: "$124",
+    originalPrice: "$249",
     desc: "The operating layer for teams managing internal ISO 27001 and GDPR readiness workflows.",
     features: [
       "Everything in Trust, plus:",
@@ -44,8 +44,8 @@ const plans = [
   {
     name: "Platform Edition",
     tagline: "Full readiness-to-trust operations.",
-    price: "£299",
-    originalPrice: "£599",
+    price: "$299",
+    originalPrice: "$599",
     desc: "For organizations scaling compliance across multiple frameworks and teams.",
     features: [
       "Everything in Readiness, plus:",
