@@ -1,3 +1,4 @@
+import posthog from 'posthog-js';
 
 export interface CookiePreferences {
   essential: boolean;
@@ -13,6 +14,7 @@ export const COOKIE_STORAGE_KEY = 'regulatrust_cookie_consent';
  */
 class CookieManager {
   private static injectedScripts: Set<string> = new Set();
+  private static isPostHogInitialized = false;
 
   /**
    * Initializes enabled cookie types based on stored preferences.
@@ -38,16 +40,30 @@ class CookieManager {
   }
 
   /**
-   * Loads Google Analytics script dynamically.
+   * Loads Google Analytics and PostHog scripts dynamically.
    * Replaces the static script tag that would normally be in index.html.
    */
   private static loadAnalytics(): void {
-    const scriptId = 'google-analytics';
+    const scriptId = 'analytics-suite';
     if (this.injectedScripts.has(scriptId)) return;
 
-    console.log('🍪 CookieManager: Loading Analytics...');
+    console.log('🍪 CookieManager: Loading Analytics (GA & PostHog)...');
     
-    // Replace G-XXXXXXXXXX with actual ID if available
+    // 1. PostHog Initialization
+    const phKey = import.meta.env.VITE_PUBLIC_POSTHOG_KEY;
+    const phHost = import.meta.env.VITE_PUBLIC_POSTHOG_HOST;
+
+    if (phKey && phHost && !this.isPostHogInitialized) {
+      posthog.init(phKey, {
+        api_host: phHost,
+        person_profiles: 'always',
+        capture_pageview: true,
+      });
+      this.isPostHogInitialized = true;
+      console.log('🦔 CookieManager: PostHog initialized');
+    }
+
+    // 2. Google Analytics
     const gaId = 'G-MOCK-ID'; 
     
     const script1 = document.createElement('script');
